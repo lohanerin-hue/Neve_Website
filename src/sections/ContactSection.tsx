@@ -99,7 +99,7 @@ export function ContactSection() {
                 </div>
                 <div>
                   <p className="text-sm text-gray-500">Email</p>
-                  <p className="text-neve-dark font-medium">hello@neve.fr</p>
+                  <p className="text-neve-dark font-medium">lohan.erin@neve.paris</p>
                 </div>
               </div>
 
@@ -109,7 +109,7 @@ export function ContactSection() {
                 </div>
                 <div>
                   <p className="text-sm text-gray-500">Phone</p>
-                  <p className="text-neve-dark font-medium">+33 1 43 48 38 12</p>
+                  <p className="text-neve-dark font-medium">+33 6 22 67 69 34</p>
                 </div>
               </div>
 
@@ -162,7 +162,7 @@ export function ContactSection() {
                           name="name"
                           placeholder="nom"
                           required
-                          className="bg-gray-50 border-gray-200 focus:border-neve-teal focus:ring-neve-teal/20"
+                          className="w-full bg-gray-50 text-black border-gray-200 focus:border-neve-teal focus:ring-neve-teal/20 rounded-md p-3"
                         />
                       </div>
                       <div>
@@ -174,7 +174,7 @@ export function ContactSection() {
                           name="email"
                           placeholder="Email"
                           required
-                          className="bg-gray-50 border-gray-200 focus:border-neve-teal focus:ring-neve-teal/20"
+                          className="w-full bg-gray-50 text-black border-gray-200 focus:border-neve-teal focus:ring-neve-teal/20 rounded-md p-3"
                         />
                       </div>
                     </div>
@@ -187,7 +187,7 @@ export function ContactSection() {
                         <Input
                           type="text"
                           placeholder="Your company"
-                          className="bg-gray-50 border-gray-200 focus:border-neve-teal focus:ring-neve-teal/20"
+                          className="w-full bg-gray-50 text-black border-gray-200 focus:border-neve-teal focus:ring-neve-teal/20 rounded-md p-3"
                         />
                       </div>
                       <div>
@@ -197,7 +197,7 @@ export function ContactSection() {
                         <Input
                           type="text"
                           placeholder="e.g. Hotel, Showroom"
-                          className="bg-gray-50 border-gray-200 focus:border-neve-teal focus:ring-neve-teal/20"
+                          className="w-full bg-gray-50 text-black border-gray-200 focus:border-neve-teal focus:ring-neve-teal/20 rounded-md p-3"
                         />
                       </div>
                     </div>
@@ -211,7 +211,7 @@ export function ContactSection() {
                         placeholder="Tell us about your space and needs..."
                         rows={5}
                         required
-                        className="bg-gray-50 border-gray-200 focus:border-neve-teal focus:ring-neve-teal/20 resize-none"
+                        className="w-full bg-gray-50 text-black border-gray-200 focus:border-neve-teal focus:ring-neve-teal/20 rounded-md p-3"
                       />
                     </div>
 
