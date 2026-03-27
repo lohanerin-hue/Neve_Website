@@ -150,7 +150,8 @@ export function ContactSection() {
                     </p>
                   </div>
                 ) : (
-                  <form onSubmit={handleSubmit} className="space-y-6">
+                  <form className="space-y-4" name="contact" method="POST" data-netlify="true">
+  <input type="hidden" name="form-name" value="contact" />
                     <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
                       <div>
                         <label className="block text-sm font-medium text-neve-dark mb-2">
@@ -158,7 +159,8 @@ export function ContactSection() {
                         </label>
                         <Input
                           type="text"
-                          placeholder="Your name"
+                          name="name"
+                          placeholder="nom"
                           required
                           className="bg-gray-50 border-gray-200 focus:border-neve-teal focus:ring-neve-teal/20"
                         />
@@ -169,7 +171,8 @@ export function ContactSection() {
                         </label>
                         <Input
                           type="email"
-                          placeholder="your@email.com"
+                          name="email"
+                          placeholder="Email"
                           required
                           className="bg-gray-50 border-gray-200 focus:border-neve-teal focus:ring-neve-teal/20"
                         />
@@ -203,7 +206,8 @@ export function ContactSection() {
                       <label className="block text-sm font-medium text-neve-dark mb-2">
                         Message
                       </label>
-                      <Textarea
+                      <Textarea 
+                        name="message"
                         placeholder="Tell us about your space and needs..."
                         rows={5}
                         required
