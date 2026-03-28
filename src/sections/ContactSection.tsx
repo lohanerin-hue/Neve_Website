@@ -106,7 +106,7 @@ export function ContactSection() {
 
         {/* FORM */}
         <div ref={formCardRef}>
-          <Card>
+          <Card className="bg-white shadow-lg rounded-2xl">
             <CardContent className="p-8">
 
               {isSubmitted ? (
