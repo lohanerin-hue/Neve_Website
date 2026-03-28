@@ -83,22 +83,22 @@ export function ContactSection() {
 
             <div className="flex items-center gap-4">
               <Mail className="text-neve-teal" />
-              <p>lohan.erin@neve.paris</p>
+              <p className="text-gray-900">lohan.erin@neve.paris</p>
             </div>
 
             <div className="flex items-center gap-4">
               <Phone className="text-neve-teal" />
-              <p>+33 6 22 67 69 34</p>
+              <p className="text-gray-900">+33 6 22 67 69 34</p>
             </div>
 
             <div className="flex items-center gap-4">
               <MapPin className="text-neve-teal" />
-              <p>70 rue Rene Boulanger 75010 Paris</p>
+              <p className="text-gray-900">70 rue Rene Boulanger 75010 Paris</p>
             </div>
 
             <div className="flex items-center gap-4">
               <Clock className="text-neve-teal" />
-              <p>Mon–Sat: 07:00–22:00</p>
+              <p className="text-gray-900">Mon–Sat: 07:00–22:00</p>
             </div>
 
           </div>
