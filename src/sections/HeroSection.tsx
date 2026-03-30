@@ -138,7 +138,7 @@ export function HeroSection() {
         {/* Subheadline */}
         <p
           ref={subheadlineRef}
-          className="mt-6 text-neve-gray text-center max-w-2xl"
+          className="mt-6 text-white text-center max-w-2xl"
           style={{
             fontSize: 'clamp(16px, 1.5vw, 20px)',
             lineHeight: 1.6,
