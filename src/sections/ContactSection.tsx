@@ -90,7 +90,7 @@ export function ContactSection() {
 
             <div className="flex items-center gap-4">
               <Phone className="text-neve-teal" />
-              <p className="text-gray-900">+33 6 22 67 69 34</p>
+              <p className="text-gray-900">+33 7 46 48 34 37</p>
             </div>
 
             <div className="flex items-center gap-4">

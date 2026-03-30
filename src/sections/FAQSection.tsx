@@ -13,27 +13,27 @@ gsap.registerPlugin(ScrollTrigger);
 const faqs = [
   {
     question: 'What makes Névé different from standard cleaning?',
-    answer: 'We specialize in luxury environments where discretion and precision are paramount. Our teams are trained in white-glove protocols, use eco-certified products, and work around your schedule—never disrupting your operations or guest experience.',
+    answer: 'Névé goes beyond basic cleaning. We combine precision, high-end products, and meticulous attention to detail to deliver results that don’t just clean — they elevate and preserve your space.',
   },
   {
     question: 'Do you work during business hours?',
-    answer: 'We offer flexible scheduling including early morning, evening, and overnight services. For hospitality and retail clients, we typically work outside peak hours to ensure zero disruption to your guests.',
+    answer: 'Yes — we operate during business hours and can also adapt to your schedule when needed. Our priority is to deliver a seamless service with minimal disruption.',
   },
   {
     question: 'Can you handle post-event resets?',
-    answer: 'Absolutely. Post-event reset is one of our core specialties. We have rapid-response teams that can transform a venue from event mode to pristine condition overnight—often within hours of the last guest departing.',
+    answer: ' Absolutely. Névé specializes in fast, efficient post-event resets — restoring your space to a clean, polished, and ready-to-use standard with precision and discretion.',
   },
   {
     question: 'What is selective sorting?',
-    answer: 'Selective sorting is our comprehensive waste management system where we separate materials at the source—organics, recyclables, hazardous materials, and landfill. We then track and report diversion rates, helping you meet sustainability goals.',
+    answer: 'Selective sorting is the process of separating waste by type — such as paper, plastic, glass, and organic materials — to ensure proper recycling and responsible disposal. ',
   },
   {
     question: 'Are your products eco-certified?',
-    answer: 'Yes. We exclusively use products with recognized eco-certifications (Ecolabel, Ecocert). Our commitment to environmental responsibility is core to our service—without compromising on cleaning efficacy.',
+    answer: 'Selective sorting is the process of separating waste by type — such as paper, plastic, glass, and organic materials — to ensure proper recycling and responsible disposal. At Névé, we integrate this approach into our service to support cleaner spaces and more sustainable practices.',
   },
   {
     question: 'How do I get a quote?',
-    answer: 'Simply fill out the contact form below or call us directly. We will schedule a brief consultation to understand your space, needs, and schedule, then provide a detailed proposal within 24 hours.',
+    answer: 'Just contact us with a few details about your needs, and we’ll provide a tailored estimate quickly and transparently.',
   },
 ];
 
