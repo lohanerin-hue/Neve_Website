@@ -1,7 +1,7 @@
-
 import { useRef, useLayoutEffect, useState } from 'react';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import emailjs from '@emailjs/browser';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
@@ -24,45 +24,48 @@ export function ContactSection() {
     if (!section || !leftContent || !formCard) return;
 
     const ctx = gsap.context(() => {
-      gsap.fromTo(
-        leftContent,
-        { x: -40, opacity: 0 },
-        {
-          x: 0,
-          opacity: 1,
-          duration: 0.8,
-          ease: 'power3.out',
-          scrollTrigger: {
-            trigger: section,
-            start: 'top 70%',
-          },
-        }
-      );
+      gsap.fromTo(leftContent, { x: -40, opacity: 0 }, {
+        x: 0,
+        opacity: 1,
+        duration: 0.8,
+        ease: 'power3.out',
+        scrollTrigger: { trigger: section, start: 'top 70%' },
+      });
 
-      gsap.fromTo(
-        formCard,
-        { x: 40, opacity: 0 },
-        {
-          x: 0,
-          opacity: 1,
-          duration: 0.8,
-          delay: 0.15,
-          ease: 'power3.out',
-          scrollTrigger: {
-            trigger: section,
-            start: 'top 70%',
-          },
-        }
-      );
+      gsap.fromTo(formCard, { x: 40, opacity: 0 }, {
+        x: 0,
+        opacity: 1,
+        duration: 0.8,
+        delay: 0.15,
+        ease: 'power3.out',
+        scrollTrigger: { trigger: section, start: 'top 70%' },
+      });
     }, section);
 
     return () => ctx.revert();
   }, []);
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    setIsSubmitted(true);
-    setTimeout(() => setIsSubmitted(false), 3000);
+
+    const form = e.currentTarget;
+
+    emailjs.sendForm(
+      "service_zzznobb",
+      "template_3n4wlcv",
+      form,
+      "eig7-6Zgx5-XNLWIH" // 🔴 METS TA PUBLIC KEY ICI
+    )
+    .then(() => {
+      console.log("SUCCESS");
+      setIsSubmitted(true);
+      form.reset();
+      setTimeout(() => setIsSubmitted(false), 3000);
+    })
+    .catch((error) => {
+      console.error("FAILED", error);
+      alert("Erreur lors de l'envoi");
+    });
   };
 
   return (
@@ -80,7 +83,6 @@ export function ContactSection() {
           </p>
 
           <div className="mt-10 space-y-6">
-
             <div className="flex items-center gap-4">
               <Mail className="text-neve-teal" />
               <p className="text-gray-900">lohan.erin@neve.paris</p>
@@ -100,7 +102,6 @@ export function ContactSection() {
               <Clock className="text-neve-teal" />
               <p className="text-gray-900">Mon–Sat: 07:00–22:00</p>
             </div>
-
           </div>
         </div>
 
@@ -112,31 +113,21 @@ export function ContactSection() {
               {isSubmitted ? (
                 <div className="text-center">
                   <CheckCircle className="mx-auto text-neve-teal" />
-                  <p>Message envoyé !</p>
+                  <p className="text-gray-900">Message envoyé !</p>
                 </div>
               ) : (
 
-                <form
-                  name="contact"
-                  method="POST"
-                  data-netlify="true"
-                  onSubmit={handleSubmit}
-                  className="space-y-4"
-                >
-                  <input type="hidden" name="form-name" value="contact" />
-
+                <form onSubmit={handleSubmit} className="space-y-4">
                   <Input name="name" placeholder="Nom" required className="text-black" />
                   <Input name="email" type="email" placeholder="Email" required className="text-black" />
                   <Input name="company" placeholder="Entreprise" className="text-black" />
                   <Input name="space" placeholder="Type d'espace" className="text-black" />
-
                   <Textarea name="message" placeholder="Message..." required className="text-black" />
 
                   <Button type="submit" className="w-full bg-neve-teal">
                     <Send className="mr-2" />
                     Envoyer
                   </Button>
-
                 </form>
 
               )}
@@ -149,4 +140,3 @@ export function ContactSection() {
     </section>
   );
 }
-// TEST PUSH
