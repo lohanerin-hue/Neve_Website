@@ -34,7 +34,7 @@ const clientLogos = [
   'Bureau Betak',
   'Pad Paris Design',
   'Villa Eugénie',
-  'and more...',
+  'and more...',  
 ];
 
 export function ClientRosterSection() {
