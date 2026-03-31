@@ -1,8 +1,7 @@
 import { useRef, useLayoutEffect } from 'react';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
-import { Button } from '@/components/ui/button';
-import { Download, Sparkles, Calendar, RotateCcw, Gem } from 'lucide-react';
+import { Sparkles, Calendar, RotateCcw, Gem } from 'lucide-react';
 
 gsap.registerPlugin(ScrollTrigger);
 
