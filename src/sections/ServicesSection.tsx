@@ -237,9 +237,6 @@ export function ServicesSection() {
             willChange: 'transform, opacity',
           }}
         >
-          <Button >
-            
-          </Button>
         </div>
       </div>
     </section>
