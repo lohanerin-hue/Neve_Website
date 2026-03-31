@@ -136,7 +136,7 @@ export function ServicesSection() {
         ref={bgRef}
         className="absolute inset-0 w-full h-full"
         style={{
-          backgroundImage: 'url(/images/services_operations.jpg)',
+          backgroundImage: 'url(/images/services_operations.webp)',
           backgroundSize: 'cover',
           backgroundPosition: 'center',
           willChange: 'transform, opacity',
@@ -164,7 +164,7 @@ export function ServicesSection() {
           }}
         >
           <img
-            src="/images/services_card_image.jpg"
+            src="/images/services_card_image.webp"
             alt="Professional cleaning service"
             className="w-full h-full object-cover"
           />
