@@ -237,12 +237,8 @@ export function ServicesSection() {
             willChange: 'transform, opacity',
           }}
         >
-          <Button
-            variant="outline"
-            className="border-neve-teal text-neve-teal hover:bg-neve-teal/10 rounded-full px-6 py-5 text-sm font-medium transition-all duration-200 group"
-          >
-            <Download className="mr-2 w-4 h-4" />
-            Download the service sheet
+          <Button >
+            
           </Button>
         </div>
       </div>
