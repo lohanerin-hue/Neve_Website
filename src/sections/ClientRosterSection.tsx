@@ -28,12 +28,13 @@ const testimonials = [
 ];
 
 const clientLogos = [
-  'Atelier Noir',
-  'Hôtel Varenne',
-  'Maison Lumière',
-  'The Showroom Co.',
-  'Studio Balthazar',
-  'Privé Events',
+  'Yves-Saint Laurent',
+  'Dior',
+  'Hermès',
+  'Bureau Betak',
+  'Pad Paris Design',
+  'Villa Eugénie',
+  'and more...',
 ];
 
 export function ClientRosterSection() {
