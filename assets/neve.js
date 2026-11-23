@@ -16,6 +16,24 @@
     items.forEach(function (el) { io.observe(el); });
   }
 
+  // Bandeau qui défile : s'arrête hors écran (économie de batterie),
+  // et les vidéos ne se chargent et ne jouent que lorsqu'il est visible.
+  var marquee = document.querySelector(".marquee");
+  if (marquee) {
+    var videos = marquee.querySelectorAll("video");
+    var reduce = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    var setPlaying = function (on) {
+      marquee.classList.toggle("is-paused", !on);
+      videos.forEach(function (v) {
+        if (on && !reduce) { var p = v.play(); if (p && p.catch) p.catch(function () {}); }
+        else v.pause();
+      });
+    };
+    if ("IntersectionObserver" in window) {
+      new IntersectionObserver(function (entries) { setPlaying(entries[0].isIntersecting); }).observe(marquee);
+    } else { setPlaying(true); }
+  }
+
   // Menu mobile : ouvre / ferme la liste des rubriques
   var toggle = document.querySelector(".menu-toggle");
   var nav = document.getElementById("menu");
