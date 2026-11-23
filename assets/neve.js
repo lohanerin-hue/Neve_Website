@@ -16,14 +16,75 @@
     items.forEach(function (el) { io.observe(el); });
   }
 
-  // Bandeau qui défile : s'arrête hors écran (économie de batterie),
-  // et les vidéos ne se chargent et ne jouent que lorsqu'il est visible.
+  // Bandeau qui défile : avance en continu (le survol ne l'arrête pas),
+  // un clic sur un nom d'événement l'amène sur cet événement,
+  // le nom de l'événement affiché s'allume. Arrêt hors écran.
   var marquee = document.querySelector(".marquee");
   if (marquee) {
+    var track = marquee.querySelector(".marquee-track");
+    var group = marquee.querySelector(".marquee-group");
+    var cards = group.querySelectorAll(".m-card");
+    var buttons = document.querySelectorAll(".m-events button");
     var videos = marquee.querySelectorAll("video");
     var reduce = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    var SPEED = 45;              // pixels par seconde
+    var x = 0, shown = -1, loopW = 0, visible = true, last = 0, jump = null, current = "";
+
+    marquee.classList.add("is-js");
+    var measure = function () { loopW = group.offsetWidth; };
+    measure();
+    window.addEventListener("resize", measure);
+
+    var highlight = function () {
+      var probe = x + 40, key = "";
+      for (var i = 0; i < cards.length; i++) {
+        var c = cards[i];
+        if (c.offsetLeft + c.offsetWidth > probe) { key = c.getAttribute("data-event"); break; }
+      }
+      if (key && key !== current) {
+        current = key;
+        buttons.forEach(function (b) {
+          var on = b.getAttribute("data-event") === key;
+          b.classList.toggle("is-active", on);
+          b.setAttribute("aria-pressed", on ? "true" : "false");
+        });
+      }
+    };
+    var render = function () {
+      track.style.transform = "translate3d(" + (-x).toFixed(1) + "px,0,0)";
+      highlight();
+    };
+    var ease = function (t) { return t < .5 ? 2 * t * t : 1 - Math.pow(-2 * t + 2, 2) / 2; };
+
+    var frame = function (now) {
+      var dt = last ? Math.min((now - last) / 1000, 0.1) : 0;
+      last = now;
+      if (jump) {
+        var t = Math.min((now - jump.start) / jump.dur, 1);
+        x = jump.from + (jump.to - jump.from) * ease(t);
+        if (t >= 1) jump = null;
+      } else if (visible && !reduce) {
+        x += SPEED * dt;
+      }
+      if (loopW > 0) { while (x >= loopW) { x -= loopW; if (jump) { jump.from -= loopW; jump.to -= loopW; } } }
+      if (x !== shown) { shown = x; render(); }
+      requestAnimationFrame(frame);
+    };
+    requestAnimationFrame(frame);
+
+    buttons.forEach(function (b) {
+      b.addEventListener("click", function () {
+        var key = b.getAttribute("data-event");
+        var first = group.querySelector('.m-card[data-event="' + key + '"]');
+        if (!first) return;
+        var target = Math.max(first.offsetLeft - 24, 0);
+        if (target < x) target += loopW;        // toujours vers l'avant, sans retour en arrière
+        jump = { from: x, to: target, start: performance.now(), dur: reduce ? 1 : 900 };
+      });
+    });
+
     var setPlaying = function (on) {
-      marquee.classList.toggle("is-paused", !on);
+      visible = on;
       videos.forEach(function (v) {
         if (on && !reduce) { var p = v.play(); if (p && p.catch) p.catch(function () {}); }
         else v.pause();

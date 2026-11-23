@@ -115,43 +115,99 @@
       </div>
 
       <!-- ===== BANDEAU QUI DÉFILE (photos et vidéos des événements) =====
-           La liste est écrite deux fois pour que la boucle soit continue :
-           toute modification doit être faite dans les deux groupes. -->
+           Cliquer un nom amène le bandeau sur cet événement.
+           Pour ajouter une photo : la déposer dans images/galerie-site/<dossier>/ et
+           ajouter une carte dans les DEUX groupes ci-dessous (la liste est doublée
+           pour que la boucle soit continue). -->
+      <div class="wrap">
+        <ul class="m-events" aria-label="Choisir un événement">
+          <li><button type="button" data-event="balenciaga">Défilé Balenciaga 2026</button></li>
+          <li><button type="button" data-event="dior">Shooting Dior</button></li>
+          <li><button type="button" data-event="loewe">Loewe</button></li>
+          <li><button type="button" data-event="stella">Stella McCartney</button></li>
+          <li><button type="button" data-event="vb">Victoria Beckham</button></li>
+          <li><button type="button" data-event="lacoste">Lacoste</button></li>
+          <li><button type="button" data-event="gucci">Dîner Gucci</button></li>
+          <li><button type="button" data-event="design-miami">Design Miami</button></li>
+          <li><button type="button" data-event="pad">PAD Paris</button></li>
+          <li><button type="button" data-event="maisons">Hôtel de Maisons</button></li>
+          <li><button type="button" data-event="roland-garros">Roland-Garros</button></li>
+          <li><button type="button" data-event="pantheon">Panthéon</button></li>
+        </ul>
+      </div>
       <div class="marquee" aria-label="Nos interventions en images">
         <div class="marquee-track">
           <div class="marquee-group">
-            <figure class="m-card portrait"><video src="images/galerie-site/balenciaga/balenciaga-02.mp4" poster="images/galerie-site/balenciaga/balenciaga-02.webp" muted loop playsinline preload="none" aria-label="Défilé Balenciaga 2026"></video><figcaption>Défilé Balenciaga 2026</figcaption></figure>
-            <figure class="m-card portrait"><img src="images/galerie-site/shooting-dior/shooting-dior-01.webp" alt="Shooting Dior" loading="lazy"><figcaption>Shooting Dior</figcaption></figure>
-            <figure class="m-card portrait"><img src="images/galerie-site/loewe/loewe-02.webp" alt="Loewe" loading="lazy"><figcaption>Loewe</figcaption></figure>
-            <figure class="m-card portrait"><img src="images/galerie-site/stella-mccartney/stella-mccartney-01.webp" alt="Stella McCartney" loading="lazy"><figcaption>Stella McCartney</figcaption></figure>
-            <figure class="m-card portrait"><video src="images/galerie-site/balenciaga/balenciaga-04.mp4" poster="images/galerie-site/balenciaga/balenciaga-04.webp" muted loop playsinline preload="none" aria-label="Défilé Balenciaga 2026"></video><figcaption>Défilé Balenciaga 2026</figcaption></figure>
-            <figure class="m-card landscape"><img src="images/galerie-site/victoria-beckham/victoria-beckham-01.webp" alt="Victoria Beckham" loading="lazy"><figcaption>Victoria Beckham</figcaption></figure>
-            <figure class="m-card portrait"><img src="images/galerie-site/lacoste/lacoste-02.webp" alt="Lacoste" loading="lazy"><figcaption>Lacoste</figcaption></figure>
-            <figure class="m-card landscape"><img src="images/galerie-site/diner-gucci/diner-gucci-01.webp" alt="Dîner Gucci" loading="lazy"><figcaption>Dîner Gucci</figcaption></figure>
-            <figure class="m-card landscape"><img src="images/galerie-site/design-miami/design-miami-01.webp" alt="Design Miami" loading="lazy"><figcaption>Design Miami</figcaption></figure>
-            <figure class="m-card portrait"><video src="images/galerie-site/balenciaga/balenciaga-05.mp4" poster="images/galerie-site/balenciaga/balenciaga-05.webp" muted loop playsinline preload="none" aria-label="Défilé Balenciaga 2026"></video><figcaption>Défilé Balenciaga 2026</figcaption></figure>
-            <figure class="m-card portrait"><img src="images/galerie-site/pad-paris/pad-paris-04.webp" alt="PAD Paris" loading="lazy"><figcaption>PAD Paris</figcaption></figure>
-            <figure class="m-card portrait"><img src="images/galerie-site/51-hotel-de-maison/51-hotel-de-maison-02.webp" alt="Hôtel de Maisons" loading="lazy"><figcaption>Hôtel de Maisons</figcaption></figure>
-            <figure class="m-card landscape"><img src="images/galerie-site/roland-garros/roland-garros-01.webp" alt="Roland-Garros" loading="lazy"><figcaption>Roland-Garros</figcaption></figure>
-            <figure class="m-card portrait"><img src="images/galerie-site/pantheon/pantheon-01.webp" alt="Panthéon" loading="lazy"><figcaption>Panthéon</figcaption></figure>
-            <figure class="m-card portrait"><img src="images/galerie-site/loewe/loewe-04.webp" alt="Loewe" loading="lazy"><figcaption>Loewe</figcaption></figure>
+            <figure class="m-card portrait" data-event="balenciaga"><video src="images/galerie-site/balenciaga/balenciaga-01.mp4" poster="images/galerie-site/balenciaga/balenciaga-01.webp" muted loop playsinline preload="none" aria-label="Défilé Balenciaga 2026"></video><figcaption>Défilé Balenciaga 2026</figcaption></figure>
+            <figure class="m-card portrait" data-event="balenciaga"><video src="images/galerie-site/balenciaga/balenciaga-02.mp4" poster="images/galerie-site/balenciaga/balenciaga-02.webp" muted loop playsinline preload="none" aria-label="Défilé Balenciaga 2026"></video><figcaption>Défilé Balenciaga 2026</figcaption></figure>
+            <figure class="m-card portrait" data-event="balenciaga"><video src="images/galerie-site/balenciaga/balenciaga-03.mp4" poster="images/galerie-site/balenciaga/balenciaga-03.webp" muted loop playsinline preload="none" aria-label="Défilé Balenciaga 2026"></video><figcaption>Défilé Balenciaga 2026</figcaption></figure>
+            <figure class="m-card portrait" data-event="balenciaga"><video src="images/galerie-site/balenciaga/balenciaga-04.mp4" poster="images/galerie-site/balenciaga/balenciaga-04.webp" muted loop playsinline preload="none" aria-label="Défilé Balenciaga 2026"></video><figcaption>Défilé Balenciaga 2026</figcaption></figure>
+            <figure class="m-card portrait" data-event="balenciaga"><video src="images/galerie-site/balenciaga/balenciaga-05.mp4" poster="images/galerie-site/balenciaga/balenciaga-05.webp" muted loop playsinline preload="none" aria-label="Défilé Balenciaga 2026"></video><figcaption>Défilé Balenciaga 2026</figcaption></figure>
+            <figure class="m-card landscape" data-event="dior"><img src="images/galerie-site/shooting-dior/shooting-dior-01.webp" alt="Shooting Dior" loading="lazy"><figcaption>Shooting Dior</figcaption></figure>
+            <figure class="m-card portrait" data-event="loewe"><img src="images/galerie-site/loewe/loewe-01.webp" alt="Loewe" loading="lazy"><figcaption>Loewe</figcaption></figure>
+            <figure class="m-card portrait" data-event="loewe"><img src="images/galerie-site/loewe/loewe-02.webp" alt="Loewe" loading="lazy"><figcaption>Loewe</figcaption></figure>
+            <figure class="m-card portrait" data-event="loewe"><img src="images/galerie-site/loewe/loewe-03.webp" alt="Loewe" loading="lazy"><figcaption>Loewe</figcaption></figure>
+            <figure class="m-card portrait" data-event="loewe"><img src="images/galerie-site/loewe/loewe-04.webp" alt="Loewe" loading="lazy"><figcaption>Loewe</figcaption></figure>
+            <figure class="m-card portrait" data-event="loewe"><img src="images/galerie-site/loewe/loewe-05.webp" alt="Loewe" loading="lazy"><figcaption>Loewe</figcaption></figure>
+            <figure class="m-card portrait" data-event="stella"><img src="images/galerie-site/stella-mccartney/stella-mccartney-01.webp" alt="Stella McCartney" loading="lazy"><figcaption>Stella McCartney</figcaption></figure>
+            <figure class="m-card portrait" data-event="stella"><img src="images/galerie-site/stella-mccartney/stella-mccartney-02.webp" alt="Stella McCartney" loading="lazy"><figcaption>Stella McCartney</figcaption></figure>
+            <figure class="m-card landscape" data-event="vb"><img src="images/galerie-site/victoria-beckham/victoria-beckham-01.webp" alt="Victoria Beckham" loading="lazy"><figcaption>Victoria Beckham</figcaption></figure>
+            <figure class="m-card portrait" data-event="lacoste"><img src="images/galerie-site/lacoste/lacoste-01.webp" alt="Lacoste" loading="lazy"><figcaption>Lacoste</figcaption></figure>
+            <figure class="m-card portrait" data-event="lacoste"><img src="images/galerie-site/lacoste/lacoste-02.webp" alt="Lacoste" loading="lazy"><figcaption>Lacoste</figcaption></figure>
+            <figure class="m-card portrait" data-event="lacoste"><img src="images/galerie-site/lacoste/lacoste-03.webp" alt="Lacoste" loading="lazy"><figcaption>Lacoste</figcaption></figure>
+            <figure class="m-card landscape" data-event="gucci"><img src="images/galerie-site/diner-gucci/diner-gucci-01.webp" alt="Dîner Gucci" loading="lazy"><figcaption>Dîner Gucci</figcaption></figure>
+            <figure class="m-card landscape" data-event="design-miami"><img src="images/galerie-site/design-miami/design-miami-01.webp" alt="Design Miami" loading="lazy"><figcaption>Design Miami</figcaption></figure>
+            <figure class="m-card landscape" data-event="design-miami"><img src="images/galerie-site/design-miami/design-miami-02.webp" alt="Design Miami" loading="lazy"><figcaption>Design Miami</figcaption></figure>
+            <figure class="m-card portrait" data-event="design-miami"><img src="images/galerie-site/design-miami/design-miami-03.webp" alt="Design Miami" loading="lazy"><figcaption>Design Miami</figcaption></figure>
+            <figure class="m-card landscape" data-event="design-miami"><img src="images/galerie-site/design-miami/design-miami-04.webp" alt="Design Miami" loading="lazy"><figcaption>Design Miami</figcaption></figure>
+            <figure class="m-card portrait" data-event="pad"><img src="images/galerie-site/pad-paris/pad-paris-01.webp" alt="PAD Paris" loading="lazy"><figcaption>PAD Paris</figcaption></figure>
+            <figure class="m-card landscape" data-event="pad"><img src="images/galerie-site/pad-paris/pad-paris-02.webp" alt="PAD Paris" loading="lazy"><figcaption>PAD Paris</figcaption></figure>
+            <figure class="m-card landscape" data-event="pad"><img src="images/galerie-site/pad-paris/pad-paris-03.webp" alt="PAD Paris" loading="lazy"><figcaption>PAD Paris</figcaption></figure>
+            <figure class="m-card portrait" data-event="pad"><img src="images/galerie-site/pad-paris/pad-paris-04.webp" alt="PAD Paris" loading="lazy"><figcaption>PAD Paris</figcaption></figure>
+            <figure class="m-card portrait" data-event="maisons"><img src="images/galerie-site/51-hotel-de-maison/51-hotel-de-maison-01.webp" alt="Hôtel de Maisons" loading="lazy"><figcaption>Hôtel de Maisons</figcaption></figure>
+            <figure class="m-card portrait" data-event="maisons"><img src="images/galerie-site/51-hotel-de-maison/51-hotel-de-maison-02.webp" alt="Hôtel de Maisons" loading="lazy"><figcaption>Hôtel de Maisons</figcaption></figure>
+            <figure class="m-card portrait" data-event="maisons"><img src="images/galerie-site/51-hotel-de-maison/51-hotel-de-maison-03.webp" alt="Hôtel de Maisons" loading="lazy"><figcaption>Hôtel de Maisons</figcaption></figure>
+            <figure class="m-card portrait" data-event="maisons"><img src="images/galerie-site/51-hotel-de-maison/51-hotel-de-maison-04.webp" alt="Hôtel de Maisons" loading="lazy"><figcaption>Hôtel de Maisons</figcaption></figure>
+            <figure class="m-card landscape" data-event="roland-garros"><img src="images/galerie-site/roland-garros/roland-garros-01.webp" alt="Roland-Garros" loading="lazy"><figcaption>Roland-Garros</figcaption></figure>
+            <figure class="m-card portrait" data-event="roland-garros"><img src="images/galerie-site/roland-garros/roland-garros-02.webp" alt="Roland-Garros" loading="lazy"><figcaption>Roland-Garros</figcaption></figure>
+            <figure class="m-card portrait" data-event="pantheon"><img src="images/galerie-site/pantheon/pantheon-01.webp" alt="Panthéon" loading="lazy"><figcaption>Panthéon</figcaption></figure>
+            <figure class="m-card portrait" data-event="pantheon"><img src="images/galerie-site/pantheon/pantheon-02.webp" alt="Panthéon" loading="lazy"><figcaption>Panthéon</figcaption></figure>
           </div>
           <div class="marquee-group" aria-hidden="true">
-            <figure class="m-card portrait"><video src="images/galerie-site/balenciaga/balenciaga-02.mp4" poster="images/galerie-site/balenciaga/balenciaga-02.webp" muted loop playsinline preload="none" aria-label="Défilé Balenciaga 2026"></video><figcaption>Défilé Balenciaga 2026</figcaption></figure>
-            <figure class="m-card portrait"><img src="images/galerie-site/shooting-dior/shooting-dior-01.webp" alt="Shooting Dior" loading="lazy"><figcaption>Shooting Dior</figcaption></figure>
-            <figure class="m-card portrait"><img src="images/galerie-site/loewe/loewe-02.webp" alt="Loewe" loading="lazy"><figcaption>Loewe</figcaption></figure>
-            <figure class="m-card portrait"><img src="images/galerie-site/stella-mccartney/stella-mccartney-01.webp" alt="Stella McCartney" loading="lazy"><figcaption>Stella McCartney</figcaption></figure>
-            <figure class="m-card portrait"><video src="images/galerie-site/balenciaga/balenciaga-04.mp4" poster="images/galerie-site/balenciaga/balenciaga-04.webp" muted loop playsinline preload="none" aria-label="Défilé Balenciaga 2026"></video><figcaption>Défilé Balenciaga 2026</figcaption></figure>
-            <figure class="m-card landscape"><img src="images/galerie-site/victoria-beckham/victoria-beckham-01.webp" alt="Victoria Beckham" loading="lazy"><figcaption>Victoria Beckham</figcaption></figure>
-            <figure class="m-card portrait"><img src="images/galerie-site/lacoste/lacoste-02.webp" alt="Lacoste" loading="lazy"><figcaption>Lacoste</figcaption></figure>
-            <figure class="m-card landscape"><img src="images/galerie-site/diner-gucci/diner-gucci-01.webp" alt="Dîner Gucci" loading="lazy"><figcaption>Dîner Gucci</figcaption></figure>
-            <figure class="m-card landscape"><img src="images/galerie-site/design-miami/design-miami-01.webp" alt="Design Miami" loading="lazy"><figcaption>Design Miami</figcaption></figure>
-            <figure class="m-card portrait"><video src="images/galerie-site/balenciaga/balenciaga-05.mp4" poster="images/galerie-site/balenciaga/balenciaga-05.webp" muted loop playsinline preload="none" aria-label="Défilé Balenciaga 2026"></video><figcaption>Défilé Balenciaga 2026</figcaption></figure>
-            <figure class="m-card portrait"><img src="images/galerie-site/pad-paris/pad-paris-04.webp" alt="PAD Paris" loading="lazy"><figcaption>PAD Paris</figcaption></figure>
-            <figure class="m-card portrait"><img src="images/galerie-site/51-hotel-de-maison/51-hotel-de-maison-02.webp" alt="Hôtel de Maisons" loading="lazy"><figcaption>Hôtel de Maisons</figcaption></figure>
-            <figure class="m-card landscape"><img src="images/galerie-site/roland-garros/roland-garros-01.webp" alt="Roland-Garros" loading="lazy"><figcaption>Roland-Garros</figcaption></figure>
-            <figure class="m-card portrait"><img src="images/galerie-site/pantheon/pantheon-01.webp" alt="Panthéon" loading="lazy"><figcaption>Panthéon</figcaption></figure>
-            <figure class="m-card portrait"><img src="images/galerie-site/loewe/loewe-04.webp" alt="Loewe" loading="lazy"><figcaption>Loewe</figcaption></figure>
+            <figure class="m-card portrait" data-event="balenciaga"><video src="images/galerie-site/balenciaga/balenciaga-01.mp4" poster="images/galerie-site/balenciaga/balenciaga-01.webp" muted loop playsinline preload="none" aria-label="Défilé Balenciaga 2026"></video><figcaption>Défilé Balenciaga 2026</figcaption></figure>
+            <figure class="m-card portrait" data-event="balenciaga"><video src="images/galerie-site/balenciaga/balenciaga-02.mp4" poster="images/galerie-site/balenciaga/balenciaga-02.webp" muted loop playsinline preload="none" aria-label="Défilé Balenciaga 2026"></video><figcaption>Défilé Balenciaga 2026</figcaption></figure>
+            <figure class="m-card portrait" data-event="balenciaga"><video src="images/galerie-site/balenciaga/balenciaga-03.mp4" poster="images/galerie-site/balenciaga/balenciaga-03.webp" muted loop playsinline preload="none" aria-label="Défilé Balenciaga 2026"></video><figcaption>Défilé Balenciaga 2026</figcaption></figure>
+            <figure class="m-card portrait" data-event="balenciaga"><video src="images/galerie-site/balenciaga/balenciaga-04.mp4" poster="images/galerie-site/balenciaga/balenciaga-04.webp" muted loop playsinline preload="none" aria-label="Défilé Balenciaga 2026"></video><figcaption>Défilé Balenciaga 2026</figcaption></figure>
+            <figure class="m-card portrait" data-event="balenciaga"><video src="images/galerie-site/balenciaga/balenciaga-05.mp4" poster="images/galerie-site/balenciaga/balenciaga-05.webp" muted loop playsinline preload="none" aria-label="Défilé Balenciaga 2026"></video><figcaption>Défilé Balenciaga 2026</figcaption></figure>
+            <figure class="m-card landscape" data-event="dior"><img src="images/galerie-site/shooting-dior/shooting-dior-01.webp" alt="Shooting Dior" loading="lazy"><figcaption>Shooting Dior</figcaption></figure>
+            <figure class="m-card portrait" data-event="loewe"><img src="images/galerie-site/loewe/loewe-01.webp" alt="Loewe" loading="lazy"><figcaption>Loewe</figcaption></figure>
+            <figure class="m-card portrait" data-event="loewe"><img src="images/galerie-site/loewe/loewe-02.webp" alt="Loewe" loading="lazy"><figcaption>Loewe</figcaption></figure>
+            <figure class="m-card portrait" data-event="loewe"><img src="images/galerie-site/loewe/loewe-03.webp" alt="Loewe" loading="lazy"><figcaption>Loewe</figcaption></figure>
+            <figure class="m-card portrait" data-event="loewe"><img src="images/galerie-site/loewe/loewe-04.webp" alt="Loewe" loading="lazy"><figcaption>Loewe</figcaption></figure>
+            <figure class="m-card portrait" data-event="loewe"><img src="images/galerie-site/loewe/loewe-05.webp" alt="Loewe" loading="lazy"><figcaption>Loewe</figcaption></figure>
+            <figure class="m-card portrait" data-event="stella"><img src="images/galerie-site/stella-mccartney/stella-mccartney-01.webp" alt="Stella McCartney" loading="lazy"><figcaption>Stella McCartney</figcaption></figure>
+            <figure class="m-card portrait" data-event="stella"><img src="images/galerie-site/stella-mccartney/stella-mccartney-02.webp" alt="Stella McCartney" loading="lazy"><figcaption>Stella McCartney</figcaption></figure>
+            <figure class="m-card landscape" data-event="vb"><img src="images/galerie-site/victoria-beckham/victoria-beckham-01.webp" alt="Victoria Beckham" loading="lazy"><figcaption>Victoria Beckham</figcaption></figure>
+            <figure class="m-card portrait" data-event="lacoste"><img src="images/galerie-site/lacoste/lacoste-01.webp" alt="Lacoste" loading="lazy"><figcaption>Lacoste</figcaption></figure>
+            <figure class="m-card portrait" data-event="lacoste"><img src="images/galerie-site/lacoste/lacoste-02.webp" alt="Lacoste" loading="lazy"><figcaption>Lacoste</figcaption></figure>
+            <figure class="m-card portrait" data-event="lacoste"><img src="images/galerie-site/lacoste/lacoste-03.webp" alt="Lacoste" loading="lazy"><figcaption>Lacoste</figcaption></figure>
+            <figure class="m-card landscape" data-event="gucci"><img src="images/galerie-site/diner-gucci/diner-gucci-01.webp" alt="Dîner Gucci" loading="lazy"><figcaption>Dîner Gucci</figcaption></figure>
+            <figure class="m-card landscape" data-event="design-miami"><img src="images/galerie-site/design-miami/design-miami-01.webp" alt="Design Miami" loading="lazy"><figcaption>Design Miami</figcaption></figure>
+            <figure class="m-card landscape" data-event="design-miami"><img src="images/galerie-site/design-miami/design-miami-02.webp" alt="Design Miami" loading="lazy"><figcaption>Design Miami</figcaption></figure>
+            <figure class="m-card portrait" data-event="design-miami"><img src="images/galerie-site/design-miami/design-miami-03.webp" alt="Design Miami" loading="lazy"><figcaption>Design Miami</figcaption></figure>
+            <figure class="m-card landscape" data-event="design-miami"><img src="images/galerie-site/design-miami/design-miami-04.webp" alt="Design Miami" loading="lazy"><figcaption>Design Miami</figcaption></figure>
+            <figure class="m-card portrait" data-event="pad"><img src="images/galerie-site/pad-paris/pad-paris-01.webp" alt="PAD Paris" loading="lazy"><figcaption>PAD Paris</figcaption></figure>
+            <figure class="m-card landscape" data-event="pad"><img src="images/galerie-site/pad-paris/pad-paris-02.webp" alt="PAD Paris" loading="lazy"><figcaption>PAD Paris</figcaption></figure>
+            <figure class="m-card landscape" data-event="pad"><img src="images/galerie-site/pad-paris/pad-paris-03.webp" alt="PAD Paris" loading="lazy"><figcaption>PAD Paris</figcaption></figure>
+            <figure class="m-card portrait" data-event="pad"><img src="images/galerie-site/pad-paris/pad-paris-04.webp" alt="PAD Paris" loading="lazy"><figcaption>PAD Paris</figcaption></figure>
+            <figure class="m-card portrait" data-event="maisons"><img src="images/galerie-site/51-hotel-de-maison/51-hotel-de-maison-01.webp" alt="Hôtel de Maisons" loading="lazy"><figcaption>Hôtel de Maisons</figcaption></figure>
+            <figure class="m-card portrait" data-event="maisons"><img src="images/galerie-site/51-hotel-de-maison/51-hotel-de-maison-02.webp" alt="Hôtel de Maisons" loading="lazy"><figcaption>Hôtel de Maisons</figcaption></figure>
+            <figure class="m-card portrait" data-event="maisons"><img src="images/galerie-site/51-hotel-de-maison/51-hotel-de-maison-03.webp" alt="Hôtel de Maisons" loading="lazy"><figcaption>Hôtel de Maisons</figcaption></figure>
+            <figure class="m-card portrait" data-event="maisons"><img src="images/galerie-site/51-hotel-de-maison/51-hotel-de-maison-04.webp" alt="Hôtel de Maisons" loading="lazy"><figcaption>Hôtel de Maisons</figcaption></figure>
+            <figure class="m-card landscape" data-event="roland-garros"><img src="images/galerie-site/roland-garros/roland-garros-01.webp" alt="Roland-Garros" loading="lazy"><figcaption>Roland-Garros</figcaption></figure>
+            <figure class="m-card portrait" data-event="roland-garros"><img src="images/galerie-site/roland-garros/roland-garros-02.webp" alt="Roland-Garros" loading="lazy"><figcaption>Roland-Garros</figcaption></figure>
+            <figure class="m-card portrait" data-event="pantheon"><img src="images/galerie-site/pantheon/pantheon-01.webp" alt="Panthéon" loading="lazy"><figcaption>Panthéon</figcaption></figure>
+            <figure class="m-card portrait" data-event="pantheon"><img src="images/galerie-site/pantheon/pantheon-02.webp" alt="Panthéon" loading="lazy"><figcaption>Panthéon</figcaption></figure>
           </div>
         </div>
       </div>
