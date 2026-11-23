@@ -1,6 +1,20 @@
-/* Névé — petit script commun : menu mobile et formulaire de contact. Aucune animation. */
+/* Névé — petit script commun : menu mobile, apparition douce au défilement, formulaire de contact. */
 (function () {
-  document.documentElement.classList.remove("no-js");
+  var root = document.documentElement;
+  root.classList.remove("no-js");
+
+  // Apparition douce des blocs marqués "reveal" (une seule fois, sans rien bloquer)
+  var items = document.querySelectorAll(".reveal");
+  if (!("IntersectionObserver" in window)) root.classList.remove("js");
+  if ("IntersectionObserver" in window && items.length) {
+    root.classList.add("js", "reveal-ready");
+    var io = new IntersectionObserver(function (entries) {
+      entries.forEach(function (e) {
+        if (e.isIntersecting) { e.target.classList.add("is-visible"); io.unobserve(e.target); }
+      });
+    }, { rootMargin: "0px 0px -8% 0px" });
+    items.forEach(function (el) { io.observe(el); });
+  }
 
   // Menu mobile : ouvre / ferme la liste des rubriques
   var toggle = document.querySelector(".menu-toggle");

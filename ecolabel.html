@@ -15,6 +15,7 @@
   <meta property="og:title" content="Écolabel européen — Névé">
   <meta property="og:description" content="Névé est titulaire de l'Écolabel européen de la propreté depuis 2023.">
   <meta property="og:image" content="https://neve.paris/images/og-image.jpg">
+  <script>document.documentElement.className = "js"; setTimeout(function () { var r = document.documentElement; if (!r.classList.contains("reveal-ready")) r.classList.remove("js"); }, 2500);</script>
   <link rel="stylesheet" href="assets/neve.css">
 </head>
 <body>
@@ -40,62 +41,64 @@
 
   <main id="contenu">
 
-    <!-- Bandeau de titre : la photo de fond se change dans style="background-image: ..." -->
-    <section class="page-hero " style="background-image: url('images/hero_interior.jpg')">
+    <!-- ===== BANDEAU PHOTO (changer la photo dans src="...") ===== -->
+    <section class="hero">
+      <img src="images/galerie-site/51-hotel-de-maison/51-hotel-de-maison-03.webp" alt="Jardin fleuri de l'Hôtel de Maisons" fetchpriority="high">
       <div class="wrap">
         <p class="label">Écolabel</p>
         <h1>Écolabel européen de la propreté</h1>
-        <p>Obtenu depuis 2023.</p>
+        <p class="lead">Obtenu depuis 2023.</p>
       </div>
     </section>
 
     <!-- ===== L'ÉCOLABEL =====
          À compléter si besoin avec des informations fournies par Névé
          (numéro de licence, logo officiel, détail des critères). -->
-    <section class="section">
-      <div class="wrap prose">
-        <p class="label">Notre certification</p>
-        <h2>Écolabel européen depuis 2023</h2>
-        <p>Écolabel européen de la propreté depuis 2023, nous répondons dans nos pratiques aux exigences des labels d'excellence.</p>
+    <section class="section cream">
+      <div class="wrap split">
+        <div class="reveal">
+          <p class="label">Notre certification</p>
+          <p class="lead-serif">Écolabel européen de la propreté depuis 2023, nous répondons dans nos pratiques aux exigences des labels d'excellence.</p>
+        </div>
+        <figure class="zoom ratio-portrait reveal " style="margin:0"><img src="images/galerie-site/51-hotel-de-maison/51-hotel-de-maison-01.webp" alt="Façade et jardin de l'Hôtel de Maisons" loading="lazy"></figure>
       </div>
     </section>
 
     <!-- ===== NOS PRATIQUES ===== -->
-    <section class="section alt">
+    <section class="section dark">
       <div class="wrap">
-        <div class="section-head">
+        <div class="section-head reveal">
           <p class="label">Au quotidien</p>
           <h2>Nos pratiques responsables</h2>
         </div>
-        <div class="grid grid-2">
-          <div class="card tint">
-            <h3>Produits ménagers écoresponsables</h3>
-            <p>Les fournitures utilisées pour nos prestations de propreté.</p>
-          </div>
-          <div class="card tint">
-            <h3>Équipes formées</h3>
-            <p>Protocoles de désinfection et d'hygiène professionnelle.</p>
-          </div>
-          <div class="card tint">
-            <h3>Revalorisation et bilan carbone</h3>
-            <p>Chaque flux est valorisé au HUB circulaire Lemon Tri, à Pantin, avec un bilan carbone dédié à chaque prestation.</p>
-          </div>
-          <div class="card tint">
-            <h3>Vélo cargo</h3>
-            <p>Solution écologique, idéale pour des volumes jusqu'à 3 m³ en zone urbaine.</p>
-          </div>
+        <div class="grid grid-4">
+          <div class="card accent reveal"><span class="num">01</span><h3>Produits écoresponsables</h3><p>Les produits ménagers utilisés pour nos prestations.</p></div>
+          <div class="card accent reveal"><span class="num">02</span><h3>Équipes formées</h3><p>Protocoles de désinfection et d'hygiène professionnelle.</p></div>
+          <div class="card accent reveal"><span class="num">03</span><h3>Bilan carbone</h3><p>Dédié à chaque prestation, flux valorisés au HUB Lemon Tri.</p></div>
+          <div class="card accent reveal"><span class="num">04</span><h3>Vélo cargo</h3><p>Solution écologique jusqu'à 3 m³ en zone urbaine.</p></div>
         </div>
       </div>
     </section>
 
-    <section class="section alt">
-      <div class="wrap">
-        <div class="next-links">
-          <a href="gestion-des-dechets.html"><p class="label">Rubrique précédente</p><strong>Gestion des déchets</strong></a>
-          <a href="faq.html"><p class="label">Rubrique suivante</p><strong>FAQ</strong></a>
-        </div>
+    <section class="photo-band">
+      <img src="images/galerie-site/design-miami/design-miami-02.webp" alt="" loading="lazy">
+      <div class="wrap reveal">
+        <p class="label">Notre particularité</p>
+        <blockquote>Notre particularité est de proposer une prestation globale, associant qualité de service et démarche environnementale. Nous sommes notamment titulaires de l’Écolabel Européen de la propreté depuis 2023.</blockquote>
       </div>
     </section>
+
+    <!-- ===== LIENS VERS LES AUTRES RUBRIQUES ===== -->
+    <nav class="next-links" aria-label="Autres rubriques">
+          <a href="gestion-des-dechets.html">
+            <img src="images/galerie-site/pad-paris/pad-paris-02.webp" alt="" loading="lazy">
+            <span class="txt"><span class="label">Rubrique précédente</span><strong>Gestion des déchets</strong></span>
+          </a>
+          <a href="faq.html">
+            <img src="images/standard_lifestyle.jpg" alt="" loading="lazy">
+            <span class="txt"><span class="label">Rubrique suivante</span><strong>FAQ</strong></span>
+          </a>
+    </nav>
 
   </main>
 
@@ -105,7 +108,7 @@
       <div class="footer-grid">
         <div>
           <a class="brand" href="index.html">Név<span>é</span></a>
-          <p style="margin-top:12px">Nettoyage responsable &amp; tri sélectif.<br>Propreté et gestion des déchets pour l'événementiel.</p>
+          <p style="margin-top:16px">Nettoyage responsable &amp; tri sélectif.<br>Propreté et gestion des déchets pour l'événementiel.</p>
         </div>
         <div>
           <h2>Rubriques</h2>

@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Névé — Propreté & gestion des déchets pour l'événementiel</title>
-  <meta name="description" content="Névé, entreprise spécialisée dans la propreté et la gestion et revalorisation des déchets pour les sociétés de production événementielles et audiovisuelles. Écolabel européen de la propreté depuis 2023.">
+  <meta name="description" content="Névé, entreprise spécialisée dans la propreté et la gestion des déchets pour l'événementiel, le luxe, la mode et l'audiovisuel. Écolabel européen de la propreté depuis 2023.">
   <meta name="theme-color" content="#0B0D10">
   <link rel="canonical" href="https://neve.paris/">
   <link rel="icon" type="image/svg+xml" href="favicon.svg">
@@ -13,8 +13,9 @@
   <meta property="og:site_name" content="Névé">
   <meta property="og:locale" content="fr_FR">
   <meta property="og:title" content="Névé — Propreté & gestion des déchets pour l'événementiel">
-  <meta property="og:description" content="Névé, entreprise spécialisée dans la propreté et la gestion et revalorisation des déchets pour les sociétés de production événementielles et audiovisuelles. Écolabel européen de la propreté depuis 2023.">
+  <meta property="og:description" content="Névé, entreprise spécialisée dans la propreté et la gestion des déchets pour l'événementiel, le luxe, la mode et l'audiovisuel. Écolabel européen de la propreté depuis 2023.">
   <meta property="og:image" content="https://neve.paris/images/og-image.jpg">
+  <script>document.documentElement.className = "js"; setTimeout(function () { var r = document.documentElement; if (!r.classList.contains("reveal-ready")) r.classList.remove("js"); }, 2500);</script>
   <link rel="stylesheet" href="assets/neve.css">
   <script type="application/ld+json">
   {
@@ -61,12 +62,13 @@
 
   <main id="contenu">
 
-    <!-- Bandeau de titre : la photo de fond se change dans style="background-image: ..." -->
-    <section class="page-hero home" style="background-image: url('images/services_operations.webp')">
+    <!-- ===== BANDEAU PHOTO (changer la photo dans src="...") ===== -->
+    <section class="hero">
+      <img src="images/services_operations.webp" alt="Une équipière Névé dans un grand salon doré" fetchpriority="high">
       <div class="wrap">
         <p class="label">Nettoyage responsable &amp; tri sélectif</p>
         <h1>Propreté &amp; gestion des déchets pour l'événementiel</h1>
-        <p>Pour les sociétés de production événementielles et audiovisuelles.</p>
+        <p class="lead">Pour les sociétés de production événementielles et audiovisuelles.</p>
         <div class="actions">
           <a class="btn btn-primary" href="contact.html">Contactez-nous</a>
           <a class="btn btn-ghost" href="proprete.html">Nos prestations</a>
@@ -74,100 +76,150 @@
       </div>
     </section>
 
-    <!-- ===== QUI SOMMES-NOUS ===== -->
-    <section class="section">
-      <div class="wrap split">
-        <div class="prose">
-          <p class="label">Qui sommes-nous</p>
-          <h2>Névé</h2>
-          <p>Nous sommes une entreprise spécialisée dans la propreté et la gestion des déchets, principalement dans les secteurs de l’événementiel, du luxe, de la mode et de l’audiovisuel.</p>
-          <p>Depuis janvier 2020, nous accompagnons de grandes productions et agences événementielles parisiennes, notamment pendant les Fashion Weeks.</p>
-          <p>Nous avons notamment participé à des projets comme Emily in Paris, le PAD, Design Miami ou encore la Fan Zone de Roland-Garros, place de la Concorde.</p>
-          <p>Concrètement, nous proposons une prise en charge complète de la propreté : nettoyage avant, pendant et après les événements, entretien des sols et des moquettes, nettoyage du mobilier et des vitres. Nos équipes sont formées pour intervenir dans des environnements exigeants, avec discrétion et flexibilité.</p>
-          <p>Nous avons également développé notre propre activité de gestion et de valorisation des déchets, avec notre hub circulaire situé à Pantin. Nous assurons la collecte, le tri et la revalorisation des différents flux, avec un bilan carbone dédié à chaque prestation.</p>
-          <p>Notre particularité est de proposer une prestation globale, associant qualité de service et démarche environnementale. Nous sommes notamment titulaires de l’Écolabel Européen de la propreté depuis 2023.</p>
+    <!-- ===== CHIFFRES CLÉS (tous tirés de la brochure) ===== -->
+    <section class="dark">
+      <div class="wrap">
+        <div class="facts">
+          <div class="reveal"><strong>Depuis 2020</strong><span>Aux côtés des productions pendant les Fashion Weeks</span></div>
+          <div class="reveal"><strong>Écolabel</strong><span>Européen de la propreté, depuis 2023</span></div>
+          <div class="reveal"><strong>24h/24 — 7j/7</strong><span>Équipe disponible depuis Pantin</span></div>
+          <div class="reveal"><strong>Sans limite</strong><span>de volume pour la collecte des déchets</span></div>
         </div>
-        <figure class="photo tall" style="margin:0">
-          <img src="images/services_card_image.webp" alt="Une équipière Névé en tenue noire dépoussière une cheminée dans un salon doré" loading="lazy" width="1200" height="1200">
-        </figure>
       </div>
     </section>
 
-    <!-- ===== ENGAGEMENTS & CERTIFICATIONS ===== -->
-    <section class="section alt">
+    <!-- ===== QUI SOMMES-NOUS ===== -->
+    <section class="section cream">
+      <div class="wrap split">
+        <div class="reveal">
+          <p class="label">Qui sommes-nous</p>
+          <p class="lead-serif">Nous sommes une entreprise spécialisée dans la propreté et la gestion des déchets, principalement dans les secteurs de l’événementiel, du luxe, de la mode et de l’audiovisuel.</p>
+        </div>
+        <figure class="zoom ratio-portrait reveal " style="margin:0"><img src="images/services_card_image.webp" alt="Une équipière Névé en tenue noire dépoussière une cheminée dans un salon doré" loading="lazy"></figure>
+      </div>
+    </section>
+
+    <!-- ===== DEPUIS 2020 + GALERIE ===== -->
+    <section class="section dark">
       <div class="wrap">
-        <div class="section-head">
-          <p class="label">Nos engagements &amp; certifications</p>
-          <h2>Des pratiques exigeantes</h2>
+        <div class="grid grid-2" style="margin-bottom:56px;align-items:end">
+          <div class="reveal">
+            <p class="label">Depuis janvier 2020</p>
+            <h2>Au cœur des grands événements parisiens</h2>
+          </div>
+          <div class="reveal">
+            <p>Depuis janvier 2020, nous accompagnons de grandes productions et agences événementielles parisiennes, notamment pendant les Fashion Weeks.</p>
+            <p>Nous avons notamment participé à des projets comme Emily in Paris, le PAD, Design Miami ou encore la Fan Zone de Roland-Garros, place de la Concorde.</p>
+          </div>
+        </div>
+        <div class="mosaic">
+          <figure class="zoom reveal tall" style="margin:0"><img src="images/galerie-site/balenciaga/balenciaga-05.webp" alt="Un équipier Névé nettoie les marches pendant un défilé" loading="lazy"><span class="caption">Fashion Week</span></figure>
+          <figure class="zoom reveal wide" style="margin:0"><img src="images/galerie-site/design-miami/design-miami-01.webp" alt="Exposition Design Miami dans un salon doré" loading="lazy"><span class="caption">Design Miami</span></figure>
+          <figure class="zoom reveal tall" style="margin:0"><img src="images/galerie-site/loewe/loewe-03.webp" alt="Deux équipiers Névé dans un salon d'exposition" loading="lazy"></figure>
+          <figure class="zoom reveal " style="margin:0"><img src="images/galerie-site/pad-paris/pad-paris-01.webp" alt="Un équipier Névé sur un stand du PAD Paris" loading="lazy"><span class="caption">Le PAD Paris</span></figure>
+          <figure class="zoom reveal " style="margin:0"><img src="images/galerie-site/roland-garros/roland-garros-02.webp" alt="Un équipier Névé nettoie la Fan Zone de Roland-Garros" loading="lazy"><span class="caption">Roland-Garros</span></figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== NOS DEUX MÉTIERS ===== -->
+    <section class="section cream">
+      <div class="wrap">
+        <div class="section-head reveal">
+          <p class="label">Nos métiers</p>
+          <h2>Une prestation globale</h2>
         </div>
         <div class="grid grid-2">
-          <div class="card tint">
-            <h3>Écolabel Européen</h3>
-            <p>De la propreté, obtenu depuis 2023.</p>
-            <p><a href="ecolabel.html">En savoir plus sur l'Écolabel</a></p>
-          </div>
-          <div class="card tint">
-            <h3>Équipes formées</h3>
-            <p>Protocoles de désinfection et d'hygiène professionnelle.</p>
-          </div>
+          <a class="photo-card reveal" href="proprete.html">
+            <img src="images/galerie-site/loewe/loewe-02.webp" alt="Équipiers Névé en intervention" loading="lazy">
+            <span class="on-photo">
+              <h3>Propreté</h3>
+              <p>Concrètement, nous proposons une prise en charge complète de la propreté : nettoyage avant, pendant et après les événements, entretien des sols et des moquettes, nettoyage du mobilier et des vitres. Nos équipes sont formées pour intervenir dans des environnements exigeants, avec discrétion et flexibilité.</p>
+              <span class="more">Découvrir →</span>
+            </span>
+          </a>
+          <a class="photo-card reveal" href="gestion-des-dechets.html">
+            <img src="images/galerie-site/pad-paris/pad-paris-04.webp" alt="Équipier Névé devant la tente du PAD Paris" loading="lazy">
+            <span class="on-photo">
+              <h3>Gestion des déchets</h3>
+              <p>Nous avons également développé notre propre activité de gestion et de valorisation des déchets, avec notre hub circulaire situé à Pantin. Nous assurons la collecte, le tri et la revalorisation des différents flux, avec un bilan carbone dédié à chaque prestation.</p>
+              <span class="more">Découvrir →</span>
+            </span>
+          </a>
         </div>
       </div>
     </section>
 
-    <!-- ===== SECTEURS D'INTERVENTION ===== -->
-    <section class="section">
+    <!-- ===== NOTRE PARTICULARITÉ ===== -->
+    <section class="photo-band">
+      <img src="images/galerie-site/51-hotel-de-maison/51-hotel-de-maison-02.webp" alt="" loading="lazy">
+      <div class="wrap reveal">
+        <p class="label">Notre particularité</p>
+        <blockquote>Notre particularité est de proposer une prestation globale, associant qualité de service et démarche environnementale. Nous sommes notamment titulaires de l’Écolabel Européen de la propreté depuis 2023.</blockquote>
+      </div>
+    </section>
+
+    <!-- ===== ENGAGEMENTS & SECTEURS ===== -->
+    <section class="section dark">
       <div class="wrap">
-        <div class="section-head">
-          <p class="label">Nos secteurs d'intervention</p>
-          <h2>Là où nous intervenons</h2>
+        <div class="grid grid-2" style="gap:64px">
+          <div class="reveal">
+            <p class="label">Nos engagements &amp; certifications</p>
+            <div class="grid" style="gap:16px">
+              <div class="card accent"><h3>Écolabel Européen</h3><p>De la propreté, obtenu depuis 2023.</p></div>
+              <div class="card accent"><h3>Équipes formées</h3><p>Protocoles de désinfection et d'hygiène professionnelle.</p></div>
+            </div>
+          </div>
+          <div class="reveal">
+            <p class="label">Nos secteurs d'intervention</p>
+            <ul class="chips">
+              <li>Luxe</li>
+              <li>Mode</li>
+              <li>Événements presse</li>
+              <li>Grand public &amp; sport</li>
+              <li>Art</li>
+              <li>Production audiovisuelle</li>
+            </ul>
+          </div>
         </div>
-        <ul class="chips">
-          <li>Luxe</li>
-          <li>Mode</li>
-          <li>Événements presse</li>
-          <li>Grand public &amp; sport</li>
-          <li>Art</li>
-          <li>Production audiovisuelle</li>
-        </ul>
       </div>
     </section>
 
     <!-- ===== RÉFÉRENCES ===== -->
-    <section class="section alt">
+    <section class="section cream">
       <div class="wrap">
-        <div class="section-head">
+        <div class="section-head reveal">
           <p class="label">Quelques références</p>
           <h2>Ils nous ont fait confiance</h2>
         </div>
         <div class="grid grid-3">
-          <article class="card">
-            <img class="cover" src="images/galerie-site/pad-paris/pad-paris-03.webp" alt="La tente du PAD Paris pendant le démontage" loading="lazy" width="1400" height="1050">
-            <h3>Le PAD Paris</h3>
-            <p class="muted">Art &amp; design contemporain · Gestion des déchets et nettoyage d'une tente de 4 000 m².</p>
-          </article>
-          <article class="card">
-            <img class="cover" src="images/galerie-site/design-miami/design-miami-02.webp" alt="Design Miami dans le jardin de l'Hôtel de Maisons" loading="lazy" width="1400" height="934">
-            <h3>Design Miami</h3>
-            <p class="muted">Accompagnement de la Foire internationale depuis sa première édition en octobre 2023 à l'Hôtel de Maisons.</p>
-          </article>
-          <article class="card">
-            <img class="cover" src="images/galerie-site/roland-garros/roland-garros-01.webp" alt="Un équipier Névé nettoie le logo Roland-Garros de la Fan Zone" loading="lazy" width="1400" height="1050">
-            <h3>Roland-Garros – Fan Zone</h3>
-            <p class="muted">Tribune Concorde · Chaque mois de mai à l'occasion de Roland-Garros.</p>
-          </article>
+          <div class="photo-card reveal">
+            <img src="images/galerie-site/pad-paris/pad-paris-03.webp" alt="La tente du PAD Paris" loading="lazy">
+            <span class="on-photo"><h3>Le PAD Paris</h3><p>Art &amp; design contemporain · Gestion des déchets et nettoyage d'une tente de 4 000 m².</p></span>
+          </div>
+          <div class="photo-card reveal">
+            <img src="images/galerie-site/design-miami/design-miami-02.webp" alt="Design Miami dans le jardin de l'Hôtel de Maisons" loading="lazy">
+            <span class="on-photo"><h3>Design Miami</h3><p>Accompagnement de la Foire internationale depuis sa première édition en octobre 2023 à l'Hôtel de Maisons.</p></span>
+          </div>
+          <div class="photo-card reveal">
+            <img src="images/galerie-site/roland-garros/roland-garros-01.webp" alt="Un équipier Névé nettoie le logo Roland-Garros" loading="lazy">
+            <span class="on-photo"><h3>Roland-Garros</h3><p>Fan Zone · Tribune Concorde · Chaque mois de mai à l'occasion de Roland-Garros.</p></span>
+          </div>
         </div>
-        <p class="callout" style="margin-top:24px">Présents depuis <strong>janvier 2020</strong> lors des saisons de mode à Paris pour le compte des principales agences de production événementielle.</p>
       </div>
     </section>
 
-    <section class="section alt">
-      <div class="wrap">
-        <div class="next-links">
-          <a href="proprete.html"><p class="label">Rubrique suivante</p><strong>Propreté</strong></a>
-          <a href="gestion-des-dechets.html"><p class="label">Rubrique</p><strong>Gestion des déchets</strong></a>
-        </div>
-      </div>
-    </section>
+    <!-- ===== LIENS VERS LES AUTRES RUBRIQUES ===== -->
+    <nav class="next-links" aria-label="Autres rubriques">
+          <a href="proprete.html">
+            <img src="images/galerie-site/loewe/loewe-05.webp" alt="" loading="lazy">
+            <span class="txt"><span class="label">Rubrique suivante</span><strong>Propreté</strong></span>
+          </a>
+          <a href="gestion-des-dechets.html">
+            <img src="images/galerie-site/pad-paris/pad-paris-02.webp" alt="" loading="lazy">
+            <span class="txt"><span class="label">Rubrique</span><strong>Gestion des déchets</strong></span>
+          </a>
+    </nav>
 
   </main>
 
@@ -177,7 +229,7 @@
       <div class="footer-grid">
         <div>
           <a class="brand" href="index.html">Név<span>é</span></a>
-          <p style="margin-top:12px">Nettoyage responsable &amp; tri sélectif.<br>Propreté et gestion des déchets pour l'événementiel.</p>
+          <p style="margin-top:16px">Nettoyage responsable &amp; tri sélectif.<br>Propreté et gestion des déchets pour l'événementiel.</p>
         </div>
         <div>
           <h2>Rubriques</h2>
