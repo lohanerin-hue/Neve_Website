@@ -83,16 +83,33 @@
       });
     });
 
-    var setPlaying = function (on) {
+    // Vidéos : elles ne jouent que lorsque la souris les survole.
+    // Sur téléphone (pas de survol), un toucher lance ou arrête la vidéo.
+    var canHover = window.matchMedia && window.matchMedia("(hover: hover)").matches;
+    var play = function (v) { var p = v.play(); if (p && p.catch) p.catch(function () {}); };
+    videos.forEach(function (v) {
+      var card = v.closest(".m-card");
+      card.classList.add("has-video");
+      v.addEventListener("play", function () { card.classList.add("is-playing"); });
+      v.addEventListener("pause", function () { card.classList.remove("is-playing"); });
+      if (canHover) {
+        card.addEventListener("mouseenter", function () { play(v); });
+        card.addEventListener("mouseleave", function () { v.pause(); });
+      } else {
+        card.addEventListener("click", function () {
+          if (v.paused) { videos.forEach(function (o) { if (o !== v) o.pause(); }); play(v); }
+          else v.pause();
+        });
+      }
+    });
+
+    var setVisible = function (on) {
       visible = on;
-      videos.forEach(function (v) {
-        if (on && !reduce) { var p = v.play(); if (p && p.catch) p.catch(function () {}); }
-        else v.pause();
-      });
+      if (!on) videos.forEach(function (v) { v.pause(); });
     };
     if ("IntersectionObserver" in window) {
-      new IntersectionObserver(function (entries) { setPlaying(entries[0].isIntersecting); }).observe(marquee);
-    } else { setPlaying(true); }
+      new IntersectionObserver(function (entries) { setVisible(entries[0].isIntersecting); }).observe(marquee);
+    }
   }
 
   // Menu mobile : ouvre / ferme la liste des rubriques
