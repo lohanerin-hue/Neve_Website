@@ -1,0 +1,4 @@
+# Ancien projet Netlify encore relié au dépôt : site statique, rien à compiler.
+[build]
+  command = "echo 'Site statique, aucune compilation'"
+  publish = "."
