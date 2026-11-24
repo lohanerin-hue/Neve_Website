@@ -1,64 +1,354 @@
 <!doctype html>
-<html lang="fr">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Névé — Nettoyage haut de gamme et tri sélectif à Paris</title>
-    <meta
-      name="description"
-      content="Névé, entreprise de nettoyage haut de gamme à Paris : entretien de showrooms, boutiques, hôtels et bureaux, remise en état après événement et tri sélectif des déchets."
-    />
-    <meta name="theme-color" content="#0B0D10" />
-    <!-- Adresse définitive du site : à modifier ici, dans robots.txt et sitemap.xml si le domaine change -->
-    <link rel="canonical" href="https://neve.paris/" />
-    <link rel="icon" type="image/svg+xml" href="./favicon.svg" />
-    <link rel="apple-touch-icon" href="./apple-touch-icon.png" />
-    <link rel="preload" as="image" href="./images/hero_interior.jpg" fetchpriority="high" />
+<html lang="fr" class="no-js">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Névé — Propreté & gestion des déchets pour l'événementiel</title>
+  <meta name="description" content="Névé, entreprise spécialisée dans la propreté et la gestion des déchets pour l'événementiel, le luxe, la mode et l'audiovisuel. Écolabel européen de la propreté depuis 2023.">
+  <meta name="theme-color" content="#0B0D10">
+  <link rel="canonical" href="https://neve.paris/">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Névé">
+  <meta property="og:locale" content="fr_FR">
+  <meta property="og:title" content="Névé — Propreté & gestion des déchets pour l'événementiel">
+  <meta property="og:description" content="Névé, entreprise spécialisée dans la propreté et la gestion des déchets pour l'événementiel, le luxe, la mode et l'audiovisuel. Écolabel européen de la propreté depuis 2023.">
+  <meta property="og:image" content="https://neve.paris/images/og-image.jpg">
+  <script>document.documentElement.className = "js"; setTimeout(function () { var r = document.documentElement; if (!r.classList.contains("reveal-ready")) r.classList.remove("js"); }, 2500);</script>
+  <link rel="stylesheet" href="assets/neve.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "Névé",
+    "description": "Propreté et gestion des déchets pour l'événementiel et la production audiovisuelle.",
+    "url": "https://neve.paris/",
+    "image": "https://neve.paris/images/og-image.jpg",
+    "email": "contact@neve.paris",
+    "telephone": "+33143483812",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "70 rue René Boulanger",
+      "postalCode": "75010",
+      "addressLocality": "Paris",
+      "addressCountry": "FR"
+    },
+    "areaServed": "Paris",
+    "openingHours": "Mo-Su 00:00-23:59"
+  }
+  </script>
+</head>
+<body>
+  <a class="skip" href="#contenu">Aller au contenu</a>
 
-    <!-- Aperçu lors d'un partage (WhatsApp, LinkedIn, Facebook…) -->
-    <meta property="og:type" content="website" />
-    <meta property="og:site_name" content="Névé" />
-    <meta property="og:locale" content="fr_FR" />
-    <meta property="og:locale:alternate" content="en_GB" />
-    <meta property="og:url" content="https://neve.paris/" />
-    <meta property="og:title" content="Névé — Nettoyage haut de gamme et tri sélectif à Paris" />
-    <meta property="og:description" content="Entretien de showrooms, boutiques, hôtels et bureaux, remise en état après événement et tri sélectif." />
-    <meta property="og:image" content="https://neve.paris/images/og-image.jpg" />
-    <meta property="og:image:width" content="1200" />
-    <meta property="og:image:height" content="630" />
-    <meta name="twitter:card" content="summary_large_image" />
+  <!-- ===== EN-TÊTE (identique sur toutes les pages : si vous changez le menu, changez-le dans chaque fichier) ===== -->
+  <header class="site-header">
+    <div class="wrap">
+      <a class="brand" href="index.html" aria-label="Névé, accueil">Név<span>é</span></a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="menu">Menu</button>
+      <nav class="main-nav" id="menu" aria-label="Menu principal">
+        <ul>
+          <li><a href="index.html" aria-current="page">Qui sommes-nous</a></li>
+          <li><a href="proprete.html">Propreté</a></li>
+          <li><a href="gestion-des-dechets.html">Gestion des déchets</a></li>
+          <li><a href="ecolabel.html">Écolabel</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+          <li><a href="contact.html" class="nav-cta">Contactez-nous</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
 
-    <!-- Fiche entreprise pour Google (adresse, téléphone, horaires) -->
-    <script type="application/ld+json">
-      {
-        "@context": "https://schema.org",
-        "@type": "LocalBusiness",
-        "name": "Névé",
-        "description": "Nettoyage haut de gamme et tri sélectif pour la mode, le luxe, l'événementiel et l'audiovisuel.",
-        "url": "https://neve.paris/",
-        "image": "https://neve.paris/images/og-image.jpg",
-        "email": "contact@neve.paris",
-        "telephone": "+33143483812",
-        "address": {
-          "@type": "PostalAddress",
-          "streetAddress": "70 rue René Boulanger",
-          "postalCode": "75010",
-          "addressLocality": "Paris",
-          "addressCountry": "FR"
-        },
-        "areaServed": "Paris",
-        "openingHours": "Mo-Su 00:00-23:59"
-      }
-    </script>
-    <script type="module" crossorigin src="./assets/index-DxU_JL9g.js"></script>
-    <link rel="stylesheet" crossorigin href="./assets/index-CfzesFXn.css">
-  </head>
-  <body>
-    <div id="root"></div>
-    <noscript>
-      <p style="font-family: sans-serif; padding: 2rem">
-        Névé — Nettoyage haut de gamme à Paris. Contact : contact@neve.paris — 01 43 48 38 12
-      </p>
-    </noscript>
-  </body>
+  <main id="contenu">
+
+    <!-- ===== BANDEAU PHOTO (changer la photo dans src="...") ===== -->
+    <section class="hero">
+      <img src="images/services_operations.webp" alt="Une équipière Névé dans un grand salon doré" fetchpriority="high">
+      <div class="wrap">
+        <p class="label">Nettoyage responsable &amp; tri sélectif</p>
+        <h1>Propreté &amp; gestion des déchets pour l'événementiel</h1>
+        <p class="lead">Pour les sociétés de production événementielles et audiovisuelles.</p>
+        <div class="actions">
+          <a class="btn btn-primary" href="contact.html">Contactez-nous</a>
+          <a class="btn btn-ghost" href="proprete.html">Nos prestations</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== CHIFFRES CLÉS (tous tirés de la brochure) ===== -->
+    <section class="dark">
+      <div class="wrap">
+        <div class="facts">
+          <div class="reveal"><strong>Depuis 2020</strong><span>Aux côtés des productions pendant les Fashion Weeks</span></div>
+          <div class="reveal"><strong>Écolabel</strong><span>Européen de la propreté, depuis 2023</span></div>
+          <div class="reveal"><strong>24h/24 — 7j/7</strong><span>Équipe disponible depuis Pantin</span></div>
+          <div class="reveal"><strong>Sans limite</strong><span>de volume pour la collecte des déchets</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== QUI SOMMES-NOUS ===== -->
+    <section class="section cream">
+      <div class="wrap split">
+        <div class="reveal">
+          <p class="label">Qui sommes-nous</p>
+          <p class="lead-serif">Nous sommes une entreprise spécialisée dans la propreté et la gestion des déchets, principalement dans les secteurs de l’événementiel, du luxe, de la mode et de l’audiovisuel.</p>
+        </div>
+        <figure class="zoom ratio-portrait reveal " style="margin:0"><img src="images/services_card_image.webp" alt="Une équipière Névé en tenue noire dépoussière une cheminée dans un salon doré" loading="lazy"></figure>
+      </div>
+    </section>
+
+    <!-- ===== DEPUIS 2020 + GALERIE ===== -->
+    <section class="section dark">
+      <div class="wrap">
+        <div class="grid grid-2" style="margin-bottom:56px;align-items:end">
+          <div class="reveal">
+            <p class="label">Depuis janvier 2020</p>
+            <h2>Au cœur des grands événements parisiens</h2>
+          </div>
+          <div class="reveal">
+            <p>Depuis janvier 2020, nous accompagnons de grandes productions et agences événementielles parisiennes, notamment pendant les Fashion Weeks.</p>
+            <p>Nous avons notamment participé à des projets comme Emily in Paris, le PAD, Design Miami ou encore la Fan Zone de Roland-Garros, place de la Concorde.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- ===== BANDEAU QUI DÉFILE (photos et vidéos des événements) =====
+           Cliquer un nom amène le bandeau sur cet événement.
+           Pour ajouter une photo : la déposer dans images/galerie-site/<dossier>/ et
+           ajouter une carte dans les DEUX groupes ci-dessous (la liste est doublée
+           pour que la boucle soit continue). -->
+      <div class="wrap">
+        <ul class="m-events" aria-label="Choisir un événement">
+          <li><button type="button" data-event="balenciaga">Défilé Balenciaga 2026</button></li>
+          <li><button type="button" data-event="dior">Shooting Dior</button></li>
+          <li><button type="button" data-event="loewe">Loewe</button></li>
+          <li><button type="button" data-event="stella">Stella McCartney</button></li>
+          <li><button type="button" data-event="vb">Victoria Beckham</button></li>
+          <li><button type="button" data-event="lacoste">Lacoste</button></li>
+          <li><button type="button" data-event="gucci">Dîner Gucci</button></li>
+          <li><button type="button" data-event="design-miami">Design Miami</button></li>
+          <li><button type="button" data-event="pad">PAD Paris</button></li>
+          <li><button type="button" data-event="maisons">Hôtel de Maisons</button></li>
+          <li><button type="button" data-event="roland-garros">Roland-Garros</button></li>
+          <li><button type="button" data-event="pantheon">Panthéon</button></li>
+        </ul>
+      </div>
+      <div class="marquee" aria-label="Nos interventions en images">
+        <div class="marquee-track">
+          <div class="marquee-group">
+            <figure class="m-card portrait" data-event="balenciaga"><video src="images/galerie-site/balenciaga/balenciaga-01.mp4" poster="images/galerie-site/balenciaga/balenciaga-01.webp" muted loop playsinline preload="none" aria-label="Défilé Balenciaga 2026"></video><figcaption>Défilé Balenciaga 2026</figcaption></figure>
+            <figure class="m-card portrait" data-event="balenciaga"><video src="images/galerie-site/balenciaga/balenciaga-02.mp4" poster="images/galerie-site/balenciaga/balenciaga-02.webp" muted loop playsinline preload="none" aria-label="Défilé Balenciaga 2026"></video><figcaption>Défilé Balenciaga 2026</figcaption></figure>
+            <figure class="m-card portrait" data-event="balenciaga"><video src="images/galerie-site/balenciaga/balenciaga-03.mp4" poster="images/galerie-site/balenciaga/balenciaga-03.webp" muted loop playsinline preload="none" aria-label="Défilé Balenciaga 2026"></video><figcaption>Défilé Balenciaga 2026</figcaption></figure>
+            <figure class="m-card portrait" data-event="balenciaga"><video src="images/galerie-site/balenciaga/balenciaga-04.mp4" poster="images/galerie-site/balenciaga/balenciaga-04.webp" muted loop playsinline preload="none" aria-label="Défilé Balenciaga 2026"></video><figcaption>Défilé Balenciaga 2026</figcaption></figure>
+            <figure class="m-card portrait" data-event="balenciaga"><video src="images/galerie-site/balenciaga/balenciaga-05.mp4" poster="images/galerie-site/balenciaga/balenciaga-05.webp" muted loop playsinline preload="none" aria-label="Défilé Balenciaga 2026"></video><figcaption>Défilé Balenciaga 2026</figcaption></figure>
+            <figure class="m-card landscape" data-event="dior"><img src="images/galerie-site/shooting-dior/shooting-dior-01.webp" alt="Shooting Dior" loading="lazy"><figcaption>Shooting Dior</figcaption></figure>
+            <figure class="m-card portrait" data-event="loewe"><img src="images/galerie-site/loewe/loewe-01.webp" alt="Loewe" loading="lazy"><figcaption>Loewe</figcaption></figure>
+            <figure class="m-card portrait" data-event="loewe"><img src="images/galerie-site/loewe/loewe-02.webp" alt="Loewe" loading="lazy"><figcaption>Loewe</figcaption></figure>
+            <figure class="m-card portrait" data-event="loewe"><img src="images/galerie-site/loewe/loewe-03.webp" alt="Loewe" loading="lazy"><figcaption>Loewe</figcaption></figure>
+            <figure class="m-card portrait" data-event="loewe"><img src="images/galerie-site/loewe/loewe-04.webp" alt="Loewe" loading="lazy"><figcaption>Loewe</figcaption></figure>
+            <figure class="m-card portrait" data-event="loewe"><img src="images/galerie-site/loewe/loewe-05.webp" alt="Loewe" loading="lazy"><figcaption>Loewe</figcaption></figure>
+            <figure class="m-card portrait" data-event="stella"><img src="images/galerie-site/stella-mccartney/stella-mccartney-01.webp" alt="Stella McCartney" loading="lazy"><figcaption>Stella McCartney</figcaption></figure>
+            <figure class="m-card portrait" data-event="stella"><img src="images/galerie-site/stella-mccartney/stella-mccartney-02.webp" alt="Stella McCartney" loading="lazy"><figcaption>Stella McCartney</figcaption></figure>
+            <figure class="m-card landscape" data-event="vb"><img src="images/galerie-site/victoria-beckham/victoria-beckham-01.webp" alt="Victoria Beckham" loading="lazy"><figcaption>Victoria Beckham</figcaption></figure>
+            <figure class="m-card portrait" data-event="lacoste"><img src="images/galerie-site/lacoste/lacoste-01.webp" alt="Lacoste" loading="lazy"><figcaption>Lacoste</figcaption></figure>
+            <figure class="m-card portrait" data-event="lacoste"><img src="images/galerie-site/lacoste/lacoste-02.webp" alt="Lacoste" loading="lazy"><figcaption>Lacoste</figcaption></figure>
+            <figure class="m-card portrait" data-event="lacoste"><img src="images/galerie-site/lacoste/lacoste-03.webp" alt="Lacoste" loading="lazy"><figcaption>Lacoste</figcaption></figure>
+            <figure class="m-card landscape" data-event="gucci"><img src="images/galerie-site/diner-gucci/diner-gucci-01.webp" alt="Dîner Gucci" loading="lazy"><figcaption>Dîner Gucci</figcaption></figure>
+            <figure class="m-card landscape" data-event="design-miami"><img src="images/galerie-site/design-miami/design-miami-01.webp" alt="Design Miami" loading="lazy"><figcaption>Design Miami</figcaption></figure>
+            <figure class="m-card landscape" data-event="design-miami"><img src="images/galerie-site/design-miami/design-miami-02.webp" alt="Design Miami" loading="lazy"><figcaption>Design Miami</figcaption></figure>
+            <figure class="m-card portrait" data-event="design-miami"><img src="images/galerie-site/design-miami/design-miami-03.webp" alt="Design Miami" loading="lazy"><figcaption>Design Miami</figcaption></figure>
+            <figure class="m-card landscape" data-event="design-miami"><img src="images/galerie-site/design-miami/design-miami-04.webp" alt="Design Miami" loading="lazy"><figcaption>Design Miami</figcaption></figure>
+            <figure class="m-card portrait" data-event="pad"><img src="images/galerie-site/pad-paris/pad-paris-01.webp" alt="PAD Paris" loading="lazy"><figcaption>PAD Paris</figcaption></figure>
+            <figure class="m-card landscape" data-event="pad"><img src="images/galerie-site/pad-paris/pad-paris-02.webp" alt="PAD Paris" loading="lazy"><figcaption>PAD Paris</figcaption></figure>
+            <figure class="m-card landscape" data-event="pad"><img src="images/galerie-site/pad-paris/pad-paris-03.webp" alt="PAD Paris" loading="lazy"><figcaption>PAD Paris</figcaption></figure>
+            <figure class="m-card portrait" data-event="pad"><img src="images/galerie-site/pad-paris/pad-paris-04.webp" alt="PAD Paris" loading="lazy"><figcaption>PAD Paris</figcaption></figure>
+            <figure class="m-card portrait" data-event="maisons"><img src="images/galerie-site/51-hotel-de-maison/51-hotel-de-maison-01.webp" alt="Hôtel de Maisons" loading="lazy"><figcaption>Hôtel de Maisons</figcaption></figure>
+            <figure class="m-card portrait" data-event="maisons"><img src="images/galerie-site/51-hotel-de-maison/51-hotel-de-maison-02.webp" alt="Hôtel de Maisons" loading="lazy"><figcaption>Hôtel de Maisons</figcaption></figure>
+            <figure class="m-card portrait" data-event="maisons"><img src="images/galerie-site/51-hotel-de-maison/51-hotel-de-maison-03.webp" alt="Hôtel de Maisons" loading="lazy"><figcaption>Hôtel de Maisons</figcaption></figure>
+            <figure class="m-card portrait" data-event="maisons"><img src="images/galerie-site/51-hotel-de-maison/51-hotel-de-maison-04.webp" alt="Hôtel de Maisons" loading="lazy"><figcaption>Hôtel de Maisons</figcaption></figure>
+            <figure class="m-card landscape" data-event="roland-garros"><img src="images/galerie-site/roland-garros/roland-garros-01.webp" alt="Roland-Garros" loading="lazy"><figcaption>Roland-Garros</figcaption></figure>
+            <figure class="m-card portrait" data-event="roland-garros"><img src="images/galerie-site/roland-garros/roland-garros-02.webp" alt="Roland-Garros" loading="lazy"><figcaption>Roland-Garros</figcaption></figure>
+            <figure class="m-card portrait" data-event="pantheon"><img src="images/galerie-site/pantheon/pantheon-01.webp" alt="Panthéon" loading="lazy"><figcaption>Panthéon</figcaption></figure>
+            <figure class="m-card portrait" data-event="pantheon"><img src="images/galerie-site/pantheon/pantheon-02.webp" alt="Panthéon" loading="lazy"><figcaption>Panthéon</figcaption></figure>
+          </div>
+          <div class="marquee-group" aria-hidden="true">
+            <figure class="m-card portrait" data-event="balenciaga"><video src="images/galerie-site/balenciaga/balenciaga-01.mp4" poster="images/galerie-site/balenciaga/balenciaga-01.webp" muted loop playsinline preload="none" aria-label="Défilé Balenciaga 2026"></video><figcaption>Défilé Balenciaga 2026</figcaption></figure>
+            <figure class="m-card portrait" data-event="balenciaga"><video src="images/galerie-site/balenciaga/balenciaga-02.mp4" poster="images/galerie-site/balenciaga/balenciaga-02.webp" muted loop playsinline preload="none" aria-label="Défilé Balenciaga 2026"></video><figcaption>Défilé Balenciaga 2026</figcaption></figure>
+            <figure class="m-card portrait" data-event="balenciaga"><video src="images/galerie-site/balenciaga/balenciaga-03.mp4" poster="images/galerie-site/balenciaga/balenciaga-03.webp" muted loop playsinline preload="none" aria-label="Défilé Balenciaga 2026"></video><figcaption>Défilé Balenciaga 2026</figcaption></figure>
+            <figure class="m-card portrait" data-event="balenciaga"><video src="images/galerie-site/balenciaga/balenciaga-04.mp4" poster="images/galerie-site/balenciaga/balenciaga-04.webp" muted loop playsinline preload="none" aria-label="Défilé Balenciaga 2026"></video><figcaption>Défilé Balenciaga 2026</figcaption></figure>
+            <figure class="m-card portrait" data-event="balenciaga"><video src="images/galerie-site/balenciaga/balenciaga-05.mp4" poster="images/galerie-site/balenciaga/balenciaga-05.webp" muted loop playsinline preload="none" aria-label="Défilé Balenciaga 2026"></video><figcaption>Défilé Balenciaga 2026</figcaption></figure>
+            <figure class="m-card landscape" data-event="dior"><img src="images/galerie-site/shooting-dior/shooting-dior-01.webp" alt="Shooting Dior" loading="lazy"><figcaption>Shooting Dior</figcaption></figure>
+            <figure class="m-card portrait" data-event="loewe"><img src="images/galerie-site/loewe/loewe-01.webp" alt="Loewe" loading="lazy"><figcaption>Loewe</figcaption></figure>
+            <figure class="m-card portrait" data-event="loewe"><img src="images/galerie-site/loewe/loewe-02.webp" alt="Loewe" loading="lazy"><figcaption>Loewe</figcaption></figure>
+            <figure class="m-card portrait" data-event="loewe"><img src="images/galerie-site/loewe/loewe-03.webp" alt="Loewe" loading="lazy"><figcaption>Loewe</figcaption></figure>
+            <figure class="m-card portrait" data-event="loewe"><img src="images/galerie-site/loewe/loewe-04.webp" alt="Loewe" loading="lazy"><figcaption>Loewe</figcaption></figure>
+            <figure class="m-card portrait" data-event="loewe"><img src="images/galerie-site/loewe/loewe-05.webp" alt="Loewe" loading="lazy"><figcaption>Loewe</figcaption></figure>
+            <figure class="m-card portrait" data-event="stella"><img src="images/galerie-site/stella-mccartney/stella-mccartney-01.webp" alt="Stella McCartney" loading="lazy"><figcaption>Stella McCartney</figcaption></figure>
+            <figure class="m-card portrait" data-event="stella"><img src="images/galerie-site/stella-mccartney/stella-mccartney-02.webp" alt="Stella McCartney" loading="lazy"><figcaption>Stella McCartney</figcaption></figure>
+            <figure class="m-card landscape" data-event="vb"><img src="images/galerie-site/victoria-beckham/victoria-beckham-01.webp" alt="Victoria Beckham" loading="lazy"><figcaption>Victoria Beckham</figcaption></figure>
+            <figure class="m-card portrait" data-event="lacoste"><img src="images/galerie-site/lacoste/lacoste-01.webp" alt="Lacoste" loading="lazy"><figcaption>Lacoste</figcaption></figure>
+            <figure class="m-card portrait" data-event="lacoste"><img src="images/galerie-site/lacoste/lacoste-02.webp" alt="Lacoste" loading="lazy"><figcaption>Lacoste</figcaption></figure>
+            <figure class="m-card portrait" data-event="lacoste"><img src="images/galerie-site/lacoste/lacoste-03.webp" alt="Lacoste" loading="lazy"><figcaption>Lacoste</figcaption></figure>
+            <figure class="m-card landscape" data-event="gucci"><img src="images/galerie-site/diner-gucci/diner-gucci-01.webp" alt="Dîner Gucci" loading="lazy"><figcaption>Dîner Gucci</figcaption></figure>
+            <figure class="m-card landscape" data-event="design-miami"><img src="images/galerie-site/design-miami/design-miami-01.webp" alt="Design Miami" loading="lazy"><figcaption>Design Miami</figcaption></figure>
+            <figure class="m-card landscape" data-event="design-miami"><img src="images/galerie-site/design-miami/design-miami-02.webp" alt="Design Miami" loading="lazy"><figcaption>Design Miami</figcaption></figure>
+            <figure class="m-card portrait" data-event="design-miami"><img src="images/galerie-site/design-miami/design-miami-03.webp" alt="Design Miami" loading="lazy"><figcaption>Design Miami</figcaption></figure>
+            <figure class="m-card landscape" data-event="design-miami"><img src="images/galerie-site/design-miami/design-miami-04.webp" alt="Design Miami" loading="lazy"><figcaption>Design Miami</figcaption></figure>
+            <figure class="m-card portrait" data-event="pad"><img src="images/galerie-site/pad-paris/pad-paris-01.webp" alt="PAD Paris" loading="lazy"><figcaption>PAD Paris</figcaption></figure>
+            <figure class="m-card landscape" data-event="pad"><img src="images/galerie-site/pad-paris/pad-paris-02.webp" alt="PAD Paris" loading="lazy"><figcaption>PAD Paris</figcaption></figure>
+            <figure class="m-card landscape" data-event="pad"><img src="images/galerie-site/pad-paris/pad-paris-03.webp" alt="PAD Paris" loading="lazy"><figcaption>PAD Paris</figcaption></figure>
+            <figure class="m-card portrait" data-event="pad"><img src="images/galerie-site/pad-paris/pad-paris-04.webp" alt="PAD Paris" loading="lazy"><figcaption>PAD Paris</figcaption></figure>
+            <figure class="m-card portrait" data-event="maisons"><img src="images/galerie-site/51-hotel-de-maison/51-hotel-de-maison-01.webp" alt="Hôtel de Maisons" loading="lazy"><figcaption>Hôtel de Maisons</figcaption></figure>
+            <figure class="m-card portrait" data-event="maisons"><img src="images/galerie-site/51-hotel-de-maison/51-hotel-de-maison-02.webp" alt="Hôtel de Maisons" loading="lazy"><figcaption>Hôtel de Maisons</figcaption></figure>
+            <figure class="m-card portrait" data-event="maisons"><img src="images/galerie-site/51-hotel-de-maison/51-hotel-de-maison-03.webp" alt="Hôtel de Maisons" loading="lazy"><figcaption>Hôtel de Maisons</figcaption></figure>
+            <figure class="m-card portrait" data-event="maisons"><img src="images/galerie-site/51-hotel-de-maison/51-hotel-de-maison-04.webp" alt="Hôtel de Maisons" loading="lazy"><figcaption>Hôtel de Maisons</figcaption></figure>
+            <figure class="m-card landscape" data-event="roland-garros"><img src="images/galerie-site/roland-garros/roland-garros-01.webp" alt="Roland-Garros" loading="lazy"><figcaption>Roland-Garros</figcaption></figure>
+            <figure class="m-card portrait" data-event="roland-garros"><img src="images/galerie-site/roland-garros/roland-garros-02.webp" alt="Roland-Garros" loading="lazy"><figcaption>Roland-Garros</figcaption></figure>
+            <figure class="m-card portrait" data-event="pantheon"><img src="images/galerie-site/pantheon/pantheon-01.webp" alt="Panthéon" loading="lazy"><figcaption>Panthéon</figcaption></figure>
+            <figure class="m-card portrait" data-event="pantheon"><img src="images/galerie-site/pantheon/pantheon-02.webp" alt="Panthéon" loading="lazy"><figcaption>Panthéon</figcaption></figure>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- ===== NOS DEUX MÉTIERS ===== -->
+    <section class="section cream">
+      <div class="wrap">
+        <div class="section-head reveal">
+          <p class="label">Nos métiers</p>
+          <h2>Une prestation globale</h2>
+        </div>
+        <div class="grid grid-2">
+          <a class="photo-card reveal" href="proprete.html">
+            <img src="images/galerie-site/loewe/loewe-02.webp" alt="Équipiers Névé en intervention" loading="lazy">
+            <span class="on-photo">
+              <h3>Propreté</h3>
+              <p>Concrètement, nous proposons une prise en charge complète de la propreté : nettoyage avant, pendant et après les événements, entretien des sols et des moquettes, nettoyage du mobilier et des vitres. Nos équipes sont formées pour intervenir dans des environnements exigeants, avec discrétion et flexibilité.</p>
+              <span class="more">Découvrir →</span>
+            </span>
+          </a>
+          <a class="photo-card reveal" href="gestion-des-dechets.html">
+            <img src="images/galerie-site/pad-paris/pad-paris-04.webp" alt="Équipier Névé devant la tente du PAD Paris" loading="lazy">
+            <span class="on-photo">
+              <h3>Gestion des déchets</h3>
+              <p>Nous avons également développé notre propre activité de gestion et de valorisation des déchets, avec notre hub circulaire situé à Pantin. Nous assurons la collecte, le tri et la revalorisation des différents flux, avec un bilan carbone dédié à chaque prestation.</p>
+              <span class="more">Découvrir →</span>
+            </span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== NOTRE PARTICULARITÉ ===== -->
+    <section class="photo-band">
+      <img src="images/galerie-site/51-hotel-de-maison/51-hotel-de-maison-02.webp" alt="" loading="lazy">
+      <div class="wrap reveal">
+        <p class="label">Notre particularité</p>
+        <blockquote>Notre particularité est de proposer une prestation globale, associant qualité de service et démarche environnementale. Nous sommes notamment titulaires de l’Écolabel Européen de la propreté depuis 2023.</blockquote>
+      </div>
+    </section>
+
+    <!-- ===== ENGAGEMENTS & SECTEURS ===== -->
+    <section class="section dark">
+      <div class="wrap">
+        <div class="grid grid-2" style="gap:64px">
+          <div class="reveal">
+            <p class="label">Nos engagements &amp; certifications</p>
+            <div class="grid" style="gap:16px">
+              <div class="card accent"><h3>Écolabel Européen</h3><p>De la propreté, obtenu depuis 2023.</p></div>
+              <div class="card accent"><h3>Équipes formées</h3><p>Protocoles de désinfection et d'hygiène professionnelle.</p></div>
+            </div>
+          </div>
+          <div class="reveal">
+            <p class="label">Nos secteurs d'intervention</p>
+            <ul class="chips">
+              <li>Luxe</li>
+              <li>Mode</li>
+              <li>Événements presse</li>
+              <li>Grand public &amp; sport</li>
+              <li>Art</li>
+              <li>Production audiovisuelle</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== RÉFÉRENCES ===== -->
+    <section class="section cream">
+      <div class="wrap">
+        <div class="section-head reveal">
+          <p class="label">Quelques références</p>
+          <h2>Ils nous ont fait confiance</h2>
+        </div>
+        <div class="grid grid-3">
+          <div class="photo-card reveal">
+            <img src="images/galerie-site/pad-paris/pad-paris-03.webp" alt="La tente du PAD Paris" loading="lazy">
+            <span class="on-photo"><h3>Le PAD Paris</h3><p>Art &amp; design contemporain · Gestion des déchets et nettoyage d'une tente de 4 000 m².</p></span>
+          </div>
+          <div class="photo-card reveal">
+            <img src="images/galerie-site/design-miami/design-miami-02.webp" alt="Design Miami dans le jardin de l'Hôtel de Maisons" loading="lazy">
+            <span class="on-photo"><h3>Design Miami</h3><p>Accompagnement de la Foire internationale depuis sa première édition en octobre 2023 à l'Hôtel de Maisons.</p></span>
+          </div>
+          <div class="photo-card reveal">
+            <img src="images/galerie-site/roland-garros/roland-garros-01.webp" alt="Un équipier Névé nettoie le logo Roland-Garros" loading="lazy">
+            <span class="on-photo"><h3>Roland-Garros</h3><p>Fan Zone · Tribune Concorde · Chaque mois de mai à l'occasion de Roland-Garros.</p></span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== LIENS VERS LES AUTRES RUBRIQUES ===== -->
+    <nav class="next-links" aria-label="Autres rubriques">
+          <a href="proprete.html">
+            <img src="images/galerie-site/loewe/loewe-05.webp" alt="" loading="lazy">
+            <span class="txt"><span class="label">Rubrique suivante</span><strong>Propreté</strong></span>
+          </a>
+          <a href="gestion-des-dechets.html">
+            <img src="images/galerie-site/pad-paris/pad-paris-02.webp" alt="" loading="lazy">
+            <span class="txt"><span class="label">Rubrique</span><strong>Gestion des déchets</strong></span>
+          </a>
+    </nav>
+
+  </main>
+
+  <!-- ===== PIED DE PAGE (identique sur toutes les pages) ===== -->
+  <footer class="site-footer">
+    <div class="wrap">
+      <div class="footer-grid">
+        <div>
+          <a class="brand" href="index.html">Név<span>é</span></a>
+          <p style="margin-top:16px">Nettoyage responsable &amp; tri sélectif.<br>Propreté et gestion des déchets pour l'événementiel.</p>
+        </div>
+        <div>
+          <h2>Rubriques</h2>
+          <ul>
+            <li><a href="index.html">Qui sommes-nous</a></li>
+            <li><a href="proprete.html">Propreté</a></li>
+            <li><a href="gestion-des-dechets.html">Gestion des déchets</a></li>
+            <li><a href="ecolabel.html">Écolabel</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="contact.html">Contactez-nous</a></li>
+          </ul>
+        </div>
+        <div>
+          <h2>Hotline</h2>
+          <ul>
+            <li><a href="tel:+33143483812">01 43 48 38 12</a></li>
+            <li><a href="mailto:contact@neve.paris">contact@neve.paris</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© Névé. Tous droits réservés.</span>
+        <span><a href="mentions-legales.html">Mentions légales</a> · <a href="mentions-legales.html#confidentialite">Politique de confidentialité</a></span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/neve.js"></script>
+</body>
 </html>

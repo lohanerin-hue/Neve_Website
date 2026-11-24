@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="fr" class="no-js">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contactez-nous — Névé</title>
+  <meta name="description" content="Contactez Névé : hotline 01 43 48 38 12, contact@neve.paris. Une équipe dédiée pour des solutions sur mesure.">
+  <meta name="theme-color" content="#0B0D10">
+  <link rel="canonical" href="https://neve.paris/contact">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Névé">
+  <meta property="og:locale" content="fr_FR">
+  <meta property="og:title" content="Contactez-nous — Névé">
+  <meta property="og:description" content="Contactez Névé : hotline 01 43 48 38 12, contact@neve.paris. Une équipe dédiée pour des solutions sur mesure.">
+  <meta property="og:image" content="https://neve.paris/images/og-image.jpg">
+  <script>document.documentElement.className = "js"; setTimeout(function () { var r = document.documentElement; if (!r.classList.contains("reveal-ready")) r.classList.remove("js"); }, 2500);</script>
+  <link rel="stylesheet" href="assets/neve.css">
+</head>
+<body>
+  <a class="skip" href="#contenu">Aller au contenu</a>
+
+  <!-- ===== EN-TÊTE (identique sur toutes les pages : si vous changez le menu, changez-le dans chaque fichier) ===== -->
+  <header class="site-header">
+    <div class="wrap">
+      <a class="brand" href="index.html" aria-label="Névé, accueil">Név<span>é</span></a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="menu">Menu</button>
+      <nav class="main-nav" id="menu" aria-label="Menu principal">
+        <ul>
+          <li><a href="index.html">Qui sommes-nous</a></li>
+          <li><a href="proprete.html">Propreté</a></li>
+          <li><a href="gestion-des-dechets.html">Gestion des déchets</a></li>
+          <li><a href="ecolabel.html">Écolabel</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+          <li><a href="contact.html" class="nav-cta" aria-current="page">Contactez-nous</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="contenu">
+
+    <!-- ===== BANDEAU PHOTO (changer la photo dans src="...") ===== -->
+    <section class="hero short">
+      <img src="images/galerie-site/loewe/loewe-02.webp" alt="Équipiers Névé en intervention" fetchpriority="high">
+      <div class="wrap">
+        <p class="label">Contactez-nous</p>
+        <h1>Contactez nos experts</h1>
+        <p class="lead">Une équipe dédiée à votre service pour des solutions sur mesure et un accompagnement personnalisé.</p>
+      </div>
+    </section>
+
+    <!-- ===== HOTLINE ===== -->
+    <section class="dark">
+      <div class="wrap hotline reveal">
+        <p class="label">Hotline</p>
+        <a href="tel:+33143483812">01 43 48 38 12</a><a href="mailto:contact@neve.paris">contact@neve.paris</a>
+      </div>
+    </section>
+
+    <!-- ===== CONTACTS ===== -->
+    <section class="section dark" style="padding-top:0">
+      <div class="wrap">
+        <div class="grid grid-3">
+          <div class="card person reveal">
+            <h3>Isabelle Castro</h3>
+            <p class="role">Responsable planification nettoyage</p>
+            <a class="line" href="tel:+33630771981">06 30 77 19 81</a>
+            <a class="line" href="mailto:isabelle.castro@neve.paris">isabelle.castro@neve.paris</a>
+          </div>
+          <div class="card person reveal">
+            <h3>Lohan Erin</h3>
+            <p class="role">Responsable tri</p>
+            <a class="line" href="tel:+33689079857">06 89 07 98 57</a>
+            <a class="line" href="mailto:lohan.erin@neve.paris">lohan.erin@neve.paris</a>
+          </div>
+          <div class="card person reveal">
+            <h3>Jean-François Venet</h3>
+            <p class="role">Responsable du développement</p>
+            <a class="line" href="tel:+33622676934">06 22 67 69 34</a>
+            <a class="line" href="mailto:jf.venet@neve.paris">jf.venet@neve.paris</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== FORMULAIRE (envoi par EmailJS, réglages dans assets/neve.js) ===== -->
+    <section class="section cream">
+      <div class="wrap split wide-img" style="align-items:start">
+        <div class="reveal">
+          <p class="label">Écrivez-nous</p>
+          <h2>Votre demande</h2>
+          <form id="contact-form" class="form" novalidate style="margin-top:24px">
+            <div class="row">
+              <div><label for="f-name">Nom *</label><input id="f-name" name="name" required maxlength="100" autocomplete="name"></div>
+              <div><label for="f-email">Email *</label><input id="f-email" name="email" type="email" required maxlength="150" autocomplete="email"></div>
+            </div>
+            <div class="row">
+              <div><label for="f-phone">Téléphone</label><input id="f-phone" name="phone" type="tel" maxlength="30" autocomplete="tel"></div>
+              <div><label for="f-company">Société</label><input id="f-company" name="company" maxlength="150" autocomplete="organization"></div>
+            </div>
+            <div>
+              <label for="f-space">Votre besoin</label>
+              <select id="f-space" name="space">
+                <option value="">Choisir…</option>
+                <option>Propreté</option>
+                <option>Gestion des déchets</option>
+                <option>Propreté et gestion des déchets</option>
+                <option>Autre</option>
+              </select>
+            </div>
+            <div><label for="f-message">Message *</label><textarea id="f-message" name="message" rows="5" required maxlength="3000"></textarea></div>
+            <div class="hp" aria-hidden="true"><label>Website <input type="text" name="website" tabindex="-1" autocomplete="off"></label></div>
+            <p class="small">En envoyant ce formulaire, vous acceptez que vos données soient utilisées uniquement pour répondre à votre demande. <a href="mentions-legales.html#confidentialite">Politique de confidentialité</a>.</p>
+            <div><button class="btn btn-dark" type="submit">Envoyer</button></div>
+            <p id="form-status" class="form-status" role="status" aria-live="polite"></p>
+          </form>
+        </div>
+        <figure class="zoom ratio-portrait reveal " style="margin:0"><img src="images/services_card_image.webp" alt="Une équipière Névé dépoussière une cheminée dorée" loading="lazy"></figure>
+      </div>
+    </section>
+
+    <section class="section dark tight">
+      <div class="wrap" style="text-align:center">
+        <p class="lead-serif reveal" style="margin:0 auto">Merci de votre confiance — nous restons à votre disposition pour toute question.</p>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===== PIED DE PAGE (identique sur toutes les pages) ===== -->
+  <footer class="site-footer">
+    <div class="wrap">
+      <div class="footer-grid">
+        <div>
+          <a class="brand" href="index.html">Név<span>é</span></a>
+          <p style="margin-top:16px">Nettoyage responsable &amp; tri sélectif.<br>Propreté et gestion des déchets pour l'événementiel.</p>
+        </div>
+        <div>
+          <h2>Rubriques</h2>
+          <ul>
+            <li><a href="index.html">Qui sommes-nous</a></li>
+            <li><a href="proprete.html">Propreté</a></li>
+            <li><a href="gestion-des-dechets.html">Gestion des déchets</a></li>
+            <li><a href="ecolabel.html">Écolabel</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="contact.html">Contactez-nous</a></li>
+          </ul>
+        </div>
+        <div>
+          <h2>Hotline</h2>
+          <ul>
+            <li><a href="tel:+33143483812">01 43 48 38 12</a></li>
+            <li><a href="mailto:contact@neve.paris">contact@neve.paris</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© Névé. Tous droits réservés.</span>
+        <span><a href="mentions-legales.html">Mentions légales</a> · <a href="mentions-legales.html#confidentialite">Politique de confidentialité</a></span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/neve.js"></script>
+</body>
+</html>
