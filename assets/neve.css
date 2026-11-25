@@ -332,3 +332,9 @@ p { margin: 0 0 1em; }
 .m-card.has-video { cursor: pointer; }
 .m-card.has-video::after { content: ""; position: absolute; top: 50%; left: 50%; width: 58px; height: 58px; margin: -29px 0 0 -29px; border-radius: 50%; border: 1px solid rgba(255,255,255,.7); background: rgba(11,13,16,.45) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M9 7l8 5-8 5z' fill='%23fff'/%3E%3C/svg%3E") center / 26px no-repeat; transition: opacity .3s; pointer-events: none; }
 .m-card.has-video.is-playing::after { opacity: 0; }
+
+/* Photo de haut de page : sur téléphone, zoom réglable pour garder le sujet au-dessus du texte.
+   Ajouter class="m-zoom" à l'image et régler --m-scale / --m-origin dans son attribut style. */
+@media (max-width: 700px) {
+  .hero > img.m-zoom { transform: scale(var(--m-scale, 1.5)); transform-origin: var(--m-origin, 50% 100%); }
+}
